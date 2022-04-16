@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.336" height="15.659" viewBox="0 0 16.336 15.659">
+  <g id="Menu_Arrow_Small_Green" data-name="Menu Arrow Small Green" transform="translate(-249 1583.501) rotate(-90)">
+    <path id="Line_25" data-name="Line 25" d="M.256,11.6A.756.756,0,0,1-.5,10.84V.256a.756.756,0,0,1,1.512,0V10.84A.756.756,0,0,1,.256,11.6Z" transform="translate(1575.416 250.5)" fill="#00594c"/>
+    <path id="Line_25_-_Outline" data-name="Line 25 - Outline" d="M.256,12.6A1.758,1.758,0,0,1-1.5,10.84V.256A1.758,1.758,0,0,1,.256-1.5,1.758,1.758,0,0,1,2.012.256V10.84A1.758,1.758,0,0,1,.256,12.6Z" transform="translate(1575.416 250.5)" fill="#00594c"/>
+    <path id="Line_26" data-name="Line 26" d="M.756,9.072A.756.756,0,0,1,0,8.316V.756a.756.756,0,0,1,1.512,0v7.56A.756.756,0,0,1,.756,9.072Z" transform="translate(1581.018 256.437) rotate(45)" fill="#00594c"/>
+    <path id="Line_26_-_Outline" data-name="Line 26 - Outline" d="M.756,10.072A1.758,1.758,0,0,1-1,8.316V.756a1.756,1.756,0,0,1,3.512,0v7.56A1.758,1.758,0,0,1,.756,10.072Z" transform="translate(1581.018 256.437) rotate(45)" fill="#00594c"/>
+    <path id="Line_27" data-name="Line 27" d="M.756,9.072A.756.756,0,0,1,0,8.316V.756a.756.756,0,0,1,1.512,0v7.56A.756.756,0,0,1,.756,9.072Z" transform="translate(1576.741 262.852) rotate(135)" fill="#00594c"/>
+    <path id="Line_27_-_Outline" data-name="Line 27 - Outline" d="M.756,10.072h0A1.758,1.758,0,0,1-1,8.316V.756A1.756,1.756,0,0,1,.756-1,1.758,1.758,0,0,1,2.512.756v7.56A1.756,1.756,0,0,1,.756,10.072Z" transform="translate(1576.741 262.852) rotate(135)" fill="#00594c"/>
+  </g>
+</svg>
