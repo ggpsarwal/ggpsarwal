@@ -78,6 +78,7 @@ header {
 
 .left_dot {
     width: 8%;
+    min-width: 100px;
     height: 100%;
     justify-content: flex-start;
     background-color: transparent;
@@ -129,6 +130,7 @@ header {
 
 .right_dot {
     width: 8%;
+    min-width: 100px;
     height: 100%;
     justify-content: flex-end;
     background-color: transparent;
