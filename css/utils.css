@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: rgb(255, 255, 255);
+    --black: rgb(46, 46, 46);
+    --green: rgb(30, 236, 119);
+    --green_hover: rgb(1, 206, 90);
+    --darkGreen: rgb(0, 89, 76);
+    --gray: rgb(214, 214, 214);
+    --antiquewhite: rgb(253, 242, 227);
+    --lightGray: rgb(233, 233, 233);
+    --orange: rgb(252, 143, 102);
+    --yellow: rgb(242, 252, 102);
+    --purple: rgb(209, 169, 249);
+    --teal: rgb(125, 64, 50);
+    --burlywood: rgb(255, 226, 187);
+    --darksalmon: rgb(254, 194, 182);
+    --brown: rgb(156, 59, 17);
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

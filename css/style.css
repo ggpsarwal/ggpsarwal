@@ -1,0 +1,22 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    flex-wrap: wrap;
+    background: white;
+}
+
+
+main {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: gray;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    bottom: 0;
+    background-color: red;
+}
