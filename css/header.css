@@ -51,6 +51,7 @@ header {
     background-color: var(--green);
     border-radius: 10px;
     justify-content: space-evenly;
+    transition: 0.5s;
 }
 
 .login:hover {
