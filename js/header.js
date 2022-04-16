@@ -393,15 +393,23 @@ header.appendChild(header_bottom);
 // Functions
 function mouseOver() {
   menu_box.style.border = "2px solid var(--green)";
+  menu_box.style.transition = "0.5s";
   first_line.innerHTML = `<svg width="25" height="3" viewBox="0 0 25 3"><path id="Menu_Line" data-name="Menu Line" d="M25,1.5H0v-3H25Z" transform="translate(0 1.5)" fill="#01ce5a"/></svg>`;
+  first_line.style.transform = "translateX(0px) translateY(1px)";
+  first_line.style.transition = "0.5s";
   second_line.innerHTML = `<svg width="25" height="3" viewBox="0 0 25 3"><path id="Menu_Line" data-name="Menu Line" d="M25,1.5H0v-3H25Z" transform="translate(0 1.5)" fill="#01ce5a"/></svg>`;
+  second_line.style.transform = "rotate(180deg) translateX(0px) translateY(1px)";
+  second_line.style.transition = "0.5s";
   menu_text.style.color = "var(--green)";
+  menu_text.style.transition = "0.5s";
   menu.style.cursor = "pointer";
 }
 function mouseOut() {
   menu_box.style.border = "2px solid var(--lightGray)";
   first_line.innerHTML = `<svg width="25" height="3" viewBox="0 0 25 3"><path id="Menu_Line" data-name="Menu Line" d="M25,1.5H0v-3H25Z" transform="translate(0 1.5)" fill="#fff"/></svg>`;
+  first_line.style.transform = "translateX(-5px) translateY(1px)";
   second_line.innerHTML = `<svg width="25" height="3" viewBox="0 0 25 3"><path id="Menu_Line" data-name="Menu Line" d="M25,1.5H0v-3H25Z" transform="translate(0 1.5)" fill="#fff"/></svg>`;
+  second_line.style.transform = "rotate(180deg) translateX(-5px) translateY(1px)";
   menu_text.style.color = "var(--lightGray)";
   menu.style.cursor = "default";
 }
