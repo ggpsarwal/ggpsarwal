@@ -1,1 +1,260 @@
-/* will work */
+footer {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    min-height: 420px;
+    bottom: 0;
+}
+
+.footer_top {
+    width: 100%;
+    height: 85%;
+    min-height: 357px;
+    background-color: var(--darkGreen);
+    justify-content: space-between;
+}
+
+.footer_logo {
+    width: 18%;
+    height: 100%;
+}
+
+.footer_logo_ggps {
+    max-height: 150px;
+}
+
+.reach_us {
+    width: 22%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.reach_title {
+    width: 100%;
+    height: 25%;
+    flex-direction: column;
+}
+
+.reach_title_text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.reach_title_line {
+    width: 35%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray);
+}
+
+.reach_body {
+    width: 100%;
+    height: 60%;
+    flex-direction: column;
+}
+
+.reach_location,
+.reach_phone,
+.reach_mail {
+    width: 100%;
+    height: calc(100%/3);
+}
+
+.reach_location_logo {
+    width: 15%;
+    align-self: flex-start;
+    padding-top: 32px;
+}
+
+.reach_location_text {
+    width: 85%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.reach_location_text_head {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+    align-self: flex-start;
+}
+
+.reach_location_text_body {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--white);
+    align-self: flex-start;
+}
+
+.reach_phone_logo {
+    width: 15%;
+    height: 100%;
+}
+
+.reach_phone_text {
+    width: 85%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.reach_phone_text_head {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+    align-self: flex-start;
+}
+
+.reach_phone_text_body {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--white);
+    align-self: flex-start;
+}
+
+.reach_email_logo {
+    width: 15%;
+    align-self: flex-end;
+    padding-bottom: 35px;
+}
+
+.reach_email_text {
+    width: 85%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.reach_email_text_head {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--white);
+    align-self: flex-start;
+}
+
+.reach_email_text_body {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--white);
+    align-self: flex-start;
+}
+
+.links {
+    width: 35%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.links_title {
+    width: 100%;
+    height: 25%;
+    flex-direction: column;
+}
+
+.links_title_text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.links_title_line {
+    width: 15%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray);
+}
+
+.links_body {
+    width: 100%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.links_body_text_1,
+.links_body_text_2,
+.links_body_text_3,
+.links_body_text_4,
+.links_body_text_5,
+.links_body_text_6 {
+    width: 100%;
+    height: 100%;
+}
+
+.links_body_text_1, .links_body_text_4 {
+    justify-content: flex-end;
+}
+
+.links_body_text_3, .links_body_text_6 {
+    justify-content: flex-start;
+}
+
+.links_body_text_1_link,
+.links_body_text_2_link,
+.links_body_text_3_link,
+.links_body_text_4_link,
+.links_body_text_5_link,
+.links_body_text_6_link {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--white);
+    cursor: pointer;
+
+}
+
+.social {
+    width: 25%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.social_title {
+    width: 100%;
+    height: 25%;
+    flex-direction: column;
+}
+
+.social_title_text {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.social_title_line {
+    width: 30%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray);
+}
+
+.social_body {
+    width: 100%;
+    height: 60%;
+}
+
+.social_body_facebook,
+.social_body_instagram,
+.social_body_twitter {
+    height: 100%;
+    width: 20%;
+    padding-bottom: 10%;
+}
+
+.facebook_icon, .instagram_icon, .twitter_icon{
+    cursor: pointer;
+}
+
+.footer_bottom {
+    width: 100%;
+    height: 15%;
+    min-height: 63px;
+    background-color: var(--black);
+}
+
+.copyright {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--white);
+}
