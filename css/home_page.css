@@ -2,7 +2,7 @@ main {
     position: relative;
     width: 100%;
     height: calc(40px + 330vh);
-    /* min-height: calc(); */
+    min-height: calc(40px + 682px + 1208px + 893px + 683px);
 }
 
 .registration {
@@ -158,6 +158,7 @@ main {
 .speciality {
     width: 100%;
     height: 115vh;
+    min-height: 1208px;
     background-color: blueviolet;
 }
 
