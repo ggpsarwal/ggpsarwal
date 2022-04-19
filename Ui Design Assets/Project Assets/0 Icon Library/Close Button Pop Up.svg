@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <g id="Close_Button_Pop_Up" data-name="Close Button Pop Up" transform="translate(-3467 184)">
+    <path id="Ellipse_99" data-name="Ellipse 99" d="M25,3a22.007,22.007,0,0,0-8.562,42.272A22.006,22.006,0,0,0,33.562,4.728,21.859,21.859,0,0,0,25,3m0-3A25,25,0,1,1,0,25,25,25,0,0,1,25,0Z" transform="translate(3467 -184)" fill="#707070"/>
+    <g id="Group_50" data-name="Group 50" transform="translate(1820.4 -1435.328) rotate(45)">
+      <path id="Line_16" data-name="Line 16" d="M0,31.5A1.5,1.5,0,0,1-1.5,30V0A1.5,1.5,0,0,1,0-1.5,1.5,1.5,0,0,1,1.5,0V30A1.5,1.5,0,0,1,0,31.5Z" transform="translate(2084.5 -294.5)" fill="#707070"/>
+      <path id="Line_17" data-name="Line 17" d="M0,31.5A1.5,1.5,0,0,1-1.5,30V0A1.5,1.5,0,0,1,0-1.5,1.5,1.5,0,0,1,1.5,0V30A1.5,1.5,0,0,1,0,31.5Z" transform="translate(2099.5 -279.5) rotate(90)" fill="#707070"/>
+    </g>
+  </g>
+</svg>

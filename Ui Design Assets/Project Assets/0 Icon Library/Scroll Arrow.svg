@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19.753" height="18.204" viewBox="0 0 19.753 18.204">
+  <g id="Scroll_Arrow" data-name="Scroll Arrow" transform="translate(-250 1587.461) rotate(-90)">
+    <path id="Line_25" data-name="Line 25" d="M.573,16.663A1.073,1.073,0,0,1-.5,15.59V.573a1.073,1.073,0,0,1,2.145,0V15.59A1.073,1.073,0,0,1,.573,16.663Z" transform="translate(1577.787 250.5)" fill="#00594c"/>
+    <path id="Line_26" data-name="Line 26" d="M1.073,12.872A1.073,1.073,0,0,1,0,11.8V1.073a1.073,1.073,0,1,1,2.145,0V11.8A1.073,1.073,0,0,1,1.073,12.872Z" transform="translate(1585.944 259.133) rotate(45)" fill="#00594c"/>
+    <path id="Line_27" data-name="Line 27" d="M1.073,12.872A1.073,1.073,0,0,1,0,11.8V1.073a1.073,1.073,0,0,1,2.145,0V11.8A1.073,1.073,0,0,1,1.073,12.872Z" transform="translate(1579.876 268.236) rotate(135)" fill="#00594c"/>
+  </g>
+</svg>
