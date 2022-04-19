@@ -1,0 +1,364 @@
+main {
+    position: relative;
+    width: 100%;
+    height: calc(40px + 330vh);
+    /* min-height: calc(); */
+}
+
+.registration {
+    width: 100%;
+    height: 40px;
+    background-color: var(--gray);
+}
+
+.registration h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--darkGreen);
+}
+
+.registration h3 span {
+    font-weight: 600;
+}
+
+.introduction {
+    width: 100%;
+    height: 65vh;
+    min-height: 682px;
+    background: url(../assets/svg/Blob.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    justify-content: space-evenly;
+}
+
+.introduction .text_container {
+    width: 60%;
+    height: 100%;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.introduction .text_container h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--darkGreen);
+}
+
+.introduction .text_container hr {
+    width: 50%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray);
+    border: none;
+}
+
+.introduction .text_container h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--darkGreen);
+}
+
+.introduction .text_container h3 span.firsr_letter {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.introduction .text_container h3 span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.introduction .text_container h3 span.read_more {
+    font-weight: 500;
+    color: var(--green);
+    cursor: pointer;
+}
+
+.introduction .director_card {
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+}
+
+.introduction .director_card .director_card_body {
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    border: 2px solid var(--white);
+    box-shadow: 10px 10px 30px -15px var(--black);
+}
+
+.introduction .director_card .director_card_body .director_card_body_photo {
+    width: 100%;
+    height: 60%;
+    background-color: var(--lightGray);
+    border-radius: 20px 20px 0 0;
+    flex-direction: column;
+}
+
+.introduction .director_card .director_card_body .director_card_body_photo h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--darkGreen);
+}
+
+.introduction .director_card .director_card_body .director_card_body_photo .photo {
+    width: 75%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.introduction .director_card .director_card_body .director_card_body_photo .photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.introduction .director_card .director_card_body .director_card_body_text {
+    width: 100%;
+    height: 40%;
+    background-color: var(--white);
+    border-radius: 0 0 20px 20px;
+    flex-direction: column;
+    padding: 0 calc(25% / 2);
+}
+
+.introduction .director_card .director_card_body .director_card_body_text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--darkGreen);
+}
+
+.introduction .director_card .director_card_body .director_card_body_text h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--darkGreen);
+}
+
+.introduction .director_card .director_card_body .director_card_body_text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--darkGreen);
+}
+
+.introduction .director_card .director_card_body .director_card_body_text button {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--green);
+    padding: 8px 50px;
+    margin-top: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid var(--darkGreen);
+}
+
+/* ````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````````` */
+.speciality {
+    width: 100%;
+    height: 115vh;
+    background-color: blueviolet;
+}
+
+.container_middle {
+    width: 100%;
+    height: 75%;
+    background-color: darkslateblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ``````````````````````````````````````````````````````````````````````````````````````````````` */
+.academics {
+    width: 100%;
+    height: 85vh;
+    min-height: 893px;
+}
+
+.academics .academic_programs {
+    width: 95%;
+    height: 80%;
+    flex-direction: column;
+}
+
+.academics .academic_programs h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--darkGreen);
+    padding-bottom: 10px;
+}
+
+.academics .academic_programs hr {
+    width: 15%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray);
+    border: none;
+}
+
+.academics .academic_programs .container_cards {
+    width: 100%;
+    height: calc(100% - 4px - 63px);
+    justify-content: space-evenly;
+}
+
+.academics .academic_programs .container_cards .elementary,
+.academics .academic_programs .container_cards .middle,
+.academics .academic_programs .container_cards .upper {
+    width: 30%;
+    height: 85%;
+    border: 5px solid var(--white);
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px -15px var(--black);
+    flex-direction: column;
+}
+
+.academics .academic_programs .container_cards .elementary {
+    background-color: var(--orange);
+}
+
+.academics .academic_programs .container_cards .middle {
+    background-color: var(--yellow);
+}
+
+.academics .academic_programs .container_cards .upper {
+    background-color: var(--purple);
+}
+
+.academics .academic_programs .container_cards .elementary .elementary_photo,
+.academics .academic_programs .container_cards .middle .middle_photo,
+.academics .academic_programs .container_cards .upper .upper_photo {
+    width: 300px;
+    height: 300px;
+    border: 5px solid var(--white);
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.academics .academic_programs .container_cards .elementary .elementary_photo img,
+.academics .academic_programs .container_cards .middle .middle_photo img,
+.academics .academic_programs .container_cards .upper .upper_photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.academics .academic_programs .container_cards .elementary .card_title,
+.academics .academic_programs .container_cards .middle .card_title,
+.academics .academic_programs .container_cards .upper .card_title {
+    font-size: 30px;
+    padding-bottom: 0;
+}
+
+.academics .academic_programs .container_cards .elementary .grades,
+.academics .academic_programs .container_cards .middle .grades,
+.academics .academic_programs .container_cards .upper .grades {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--darkGreen);
+    padding-bottom: 10px;
+}
+
+.academics .academic_programs .container_cards .elementary .read_more,
+.academics .academic_programs .container_cards .middle .read_more,
+.academics .academic_programs .container_cards .upper .read_more {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--green);
+    padding: 8px 50px;
+    margin-top: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid var(--darkGreen);
+}
+
+.numerical_figures {
+    width: 100%;
+    height: 65vh;
+    min-height: 683px;
+    transform: rotate(180deg);
+    background: url(../assets/svg/Blob.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+.numerical_figures .container_data {
+    width: 100%;
+    height: 60%;
+    transform: rotate(180deg);
+}
+
+.numerical_figures .container_data .container_data_text {
+    width: 100%;
+    height: 30%;
+    flex-direction: column;
+}
+
+.numerical_figures .container_data .container_data_text h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--darkGreen);
+}
+
+.numerical_figures .container_data .container_data_text hr {
+    width: 20%;
+    height: 4px;
+    background-color: var(--gray);
+    border: none;
+}
+
+.numerical_figures .container_data .container_data_images {
+    width: 100%;
+    height: 70%;
+}
+
+.numerical_figures .container_data .container_data_images>div {
+    width: calc(100%/6);
+    height: 100%;
+    flex-direction: column;
+}
+
+.numerical_figures .container_data .container_data_images h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: var(--darkGreen);
+}
+
+.numerical_figures .container_data .container_data_images h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--darkGreen);
+}
