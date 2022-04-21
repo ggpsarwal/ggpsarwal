@@ -107,6 +107,10 @@ header {
     width: 30px;
 }
 
+.first_text, .second_text {
+    cursor: pointer;
+}
+
 .first_text h3, .second_text h3 {
     font-size: 35px;
     font-weight: 500;
