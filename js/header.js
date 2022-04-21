@@ -9,11 +9,11 @@ header_top.classList.add('header_top');
 var menu = document.createElement('div');
 menu.classList.add('menu');
 menu.classList.add('flexbox');
-menu.onmouseover = function() {
-  mouseOver();
+menu.onmouseover = function () {
+  mouseOnMenu();
 }
-menu.onmouseout = function() {
-  mouseOut();
+menu.onmouseout = function () {
+  mouseOutMenu();
 }
 
 // Top header --> Menu --> Part 1
@@ -45,9 +45,9 @@ menu.appendChild(menu_box);
 menu.appendChild(menu_text);
 
 // Top header --> Login
-var login = document.createElement('div');
-login.classList.add('login');
+var login = document.createElement('button');
 login.classList.add('flexbox');
+login.classList.add('login');
 
 // Top header --> Login --> Part 1 --> User_logo
 var user_logo = document.createElement('div');
@@ -391,7 +391,8 @@ header.appendChild(header_top);
 header.appendChild(header_bottom);
 
 // Functions
-function mouseOver() {
+// Menu Hover On Functions
+function mouseOnMenu() {
   menu_box.style.border = "2px solid var(--green)";
   menu_box.style.transition = "0.5s";
   first_line.innerHTML = `<svg width="25" height="3" viewBox="0 0 25 3"><path id="Menu_Line" data-name="Menu Line" d="M25,1.5H0v-3H25Z" transform="translate(0 1.5)" fill="#01ce5a"/></svg>`;
@@ -404,7 +405,9 @@ function mouseOver() {
   menu_text.style.transition = "0.5s";
   menu.style.cursor = "pointer";
 }
-function mouseOut() {
+
+// Menu Hover Off Functions
+function mouseOutMenu() {
   menu_box.style.border = "2px solid var(--lightGray)";
   first_line.innerHTML = `<svg width="25" height="3" viewBox="0 0 25 3"><path id="Menu_Line" data-name="Menu Line" d="M25,1.5H0v-3H25Z" transform="translate(0 1.5)" fill="#fff"/></svg>`;
   first_line.style.transform = "translateX(-5px) translateY(1px)";
@@ -412,4 +415,24 @@ function mouseOut() {
   second_line.style.transform = "rotate(180deg) translateX(-5px) translateY(1px)";
   menu_text.style.color = "var(--lightGray)";
   menu.style.cursor = "default";
+}
+
+// Login Box Functions
+const login_box = document.getElementById('login_box');
+const close = document.getElementById('close');
+const main = document.getElementById('main');
+
+login.addEventListener("click", loginBox);
+close.addEventListener("click", closeBox);
+
+function loginBox() {
+  login_box.style.display = "flex";
+  main.style.filter = "blur(50px)";
+  footer_top.style.filter = "blur(50px)";
+}
+
+function closeBox() {
+  login_box.style.display = "none";
+  main.style.filter = "blur(0px)";
+  footer_top.style.filter = "blur(0px)";
 }
