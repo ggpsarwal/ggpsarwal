@@ -51,11 +51,12 @@ header {
     border-radius: 10px;
     justify-content: space-evenly;
     transition: 0.5s;
+    border: none;
+    cursor: pointer;
 }
 
 .login:hover {
     background-color: var(--green_hover);
-    cursor: pointer;
 }
 
 .user_logo {
@@ -66,6 +67,58 @@ header {
     font-size: 20px;
     font-weight: 500;
     color: var(--white);
+}
+
+.login_box {
+    position: fixed;
+    width: 50%;
+    height: 40%;
+    min-height: 420px;
+    border-radius: 20px;
+    top: 30%;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, .4);
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 5px 45px rgb(0 0 0 / 10%);
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    z-index: 999;
+}
+
+#close {
+    position: absolute;
+    width: 45px;
+    cursor: pointer;
+    top: 15px;
+    right: 15px;
+}
+
+.dot {
+    position: absolute;
+    width: 30px;
+    bottom: 15px;
+}
+
+.lock {
+    width: 30px;
+}
+
+.first_text h3, .second_text h3 {
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--darkGreen);
+    margin-right: 15px;
+}
+
+.login_box hr {
+    width: 25%;
+    height: 4px;
+    background-color: var(--gray);
+    border: none;
 }
 
 .header_bottom {
