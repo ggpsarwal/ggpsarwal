@@ -11,10 +11,10 @@ menu.classList.add('menu');
 menu.classList.add('flexbox');
 menu.onmouseover = function () {
   mouseOnMenu();
-}
+};
 menu.onmouseout = function () {
   mouseOutMenu();
-}
+};
 
 // Top header --> Menu --> Part 1
 var menu_box = document.createElement('div');
@@ -48,7 +48,7 @@ menu.appendChild(menu_text);
 var login = document.createElement('button');
 login.classList.add('flexbox');
 login.classList.add('login');
-login.setAttribute("onclick", "loginBox()")
+login.setAttribute("onclick", "loginBox()");
 
 // Top header --> Login --> Part 1 --> User_logo
 var user_logo = document.createElement('div');
