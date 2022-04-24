@@ -109,6 +109,7 @@ header {
 
 .first_text, .second_text {
     cursor: pointer;
+    text-decoration: none;
 }
 
 .first_text h3, .second_text h3 {
@@ -147,10 +148,14 @@ header {
     justify-content: space-evenly;
 }
 
+.logo_ggps_a{
+    position: relative;
+    max-height: 185px;
+}
+
 .logo_ggps {
     position: relative;
     max-height: 185px;
-
 }
 
 .ggps_text {
