@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="./css/utils.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/student_login.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body class="flexbox">
+    <header id="header"></header>
+    <section id="login_box" class="flexbox login_box">
+        <img src="./assets/svg/svg_header/close.svg" alt="Close Button" id="close" onclick="closeBox()">
+        <img src="./assets/svg/svg_header/lock.svg" alt="Lock" class="lock">
+
+        <a href="./school_login.html" class="first_text flexbox">
+            <h3>School Login</h3>
+            <img src="./assets/svg/svg_header/arrow_right.svg" alt="Arrow">
+        </a>
+        <hr>
+        <a href="./student_login.html" class="second_text flexbox">
+            <h3>Parents / Students Login</h3>
+            <img src="./assets/svg/svg_header/arrow_right.svg" alt="Arrow">
+        </a>
+        <img src="./assets/svg/svg_header/dot.svg" alt="Dots" class="dot">
+    </section>
+
+    <main id="main_student_login" class="flexbox" style="justify-content: space-evenly;">
+        <div class="photo flexbox">
+            <img src="./assets/Student_login/Family_Student.svg" alt="Student Login">
+        </div>
+        <div class="login_form flexbox">
+            <div class="student_login_form flexbox">
+                <img src="./assets/Student_login/Login_Girl.svg" alt="Login_Girl">
+                <h2>Login</h2>
+                <form action="" class="flexbox">
+                    <div class="box flexbox">
+                        <div class="input_text flexbox">
+                            <img src="./assets/svg/svg_student_login/Username.svg">
+                            <input type="text" name="username" id="username" placeholder="Username">
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="box flexbox">
+                        <div class="input_text flexbox">
+                            <img src="./assets/svg/svg_student_login/Password.svg">
+                            <input type="password" name="password" id="password" placeholder="Password">
+                        </div>
+                        <hr>
+                        <a href="#">Forgot Password ?</a>
+                    </div>
+                    <button type="submit">Log In</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script>
+        // Login Box Functions
+        const main_student_login = document.getElementById("main_student_login");
+
+        function loginBox() {
+            login_box.style.display = "flex";
+            main_student_login.style.filter = "blur(50px)";
+            footer_top.style.filter = "blur(50px)";
+        }
+
+        function closeBox() {
+            login_box.style.display = "none";
+            main_student_login.style.filter = "blur(0px)";
+            footer_top.style.filter = "blur(0px)";
+        }
+    </script>
+</body>
+
+</html>
