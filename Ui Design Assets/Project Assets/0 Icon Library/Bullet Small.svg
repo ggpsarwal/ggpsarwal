@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+  <g transform="translate(-115 -800)">
+    <circle id="Bullet_Small" data-name="Bullet Small" cx="5" cy="5" r="5" transform="translate(115 800)" fill="#00594c"/>
+    <path id="Bullet_Small_-_Outline" data-name="Bullet Small - Outline" d="M5,1A4,4,0,1,0,9,5,4,4,0,0,0,5,1M5,0A5,5,0,1,1,0,5,5,5,0,0,1,5,0Z" transform="translate(115 800)" fill="#707070"/>
+  </g>
+</svg>
