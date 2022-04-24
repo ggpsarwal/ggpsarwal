@@ -14,7 +14,7 @@ footer_logo.classList.add('footer_logo');
 var footer_logo_ggps = document.createElement('img');
 footer_logo_ggps.classList.add('footer_logo_ggps');
 footer_logo_ggps.setAttribute('src', './assets/logo_ggps.png')
-footer_logo_ggps.setAttribute('alt', 'Logo GGPS')
+footer_logo_ggps.setAttribute('alt', 'Logo GGPS');
 
 // Append Child for footer_logo
 footer_logo.appendChild(footer_logo_ggps);
