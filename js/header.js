@@ -48,6 +48,7 @@ menu.appendChild(menu_text);
 var login = document.createElement('button');
 login.classList.add('flexbox');
 login.classList.add('login');
+login.setAttribute("onclick", "loginBox()")
 
 // Top header --> Login --> Part 1 --> User_logo
 var user_logo = document.createElement('div');
@@ -203,15 +204,23 @@ left_dot.innerHTML = `<svg width="90" height="216" viewBox="0 0 115 231">
 </svg>`;
 
 // Bottom header --> main_header
-var main_header = document.createElement('div')
+var main_header = document.createElement('div');
 main_header.classList.add('flexbox');
 main_header.classList.add('main_header');
+
+// Bottom header --> main_header --> Logo_GGPS_a
+var logo_ggps_a = document.createElement('a');
+logo_ggps_a.classList.add('logo_ggps_a');
+logo_ggps_a.setAttribute('href', './index.html');
 
 // Bottom header --> main_header --> Logo_GGPS
 var logo_ggps = document.createElement('img');
 logo_ggps.classList.add('logo_ggps');
-logo_ggps.setAttribute('src', './assets/logo_ggps.png')
-logo_ggps.setAttribute('alt', 'Logo GGPS')
+logo_ggps.setAttribute('src', './assets/logo_ggps.png');
+logo_ggps.setAttribute('alt', 'Logo GGPS');
+
+// Append Child for main_header
+logo_ggps_a.appendChild(logo_ggps);
 
 // Bottom header --> main_header --> Text_GGPS
 var ggps_text = document.createElement('div');
@@ -249,7 +258,7 @@ ggps_text.appendChild(ggps_name);
 ggps_text.appendChild(ggps_address);
 
 // Append Child for main_header
-main_header.appendChild(logo_ggps);
+main_header.appendChild(logo_ggps_a);
 main_header.appendChild(ggps_text);
 
 // Bottom header --> right_dot
@@ -415,24 +424,4 @@ function mouseOutMenu() {
   second_line.style.transform = "rotate(180deg) translateX(-5px) translateY(1px)";
   menu_text.style.color = "var(--lightGray)";
   menu.style.cursor = "default";
-}
-
-// Login Box Functions
-const login_box = document.getElementById('login_box');
-const close = document.getElementById('close');
-const main = document.getElementById('main');
-
-login.addEventListener("click", loginBox);
-close.addEventListener("click", closeBox);
-
-function loginBox() {
-  login_box.style.display = "flex";
-  main.style.filter = "blur(50px)";
-  footer_top.style.filter = "blur(50px)";
-}
-
-function closeBox() {
-  login_box.style.display = "none";
-  main.style.filter = "blur(0px)";
-  footer_top.style.filter = "blur(0px)";
 }
