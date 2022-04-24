@@ -7,31 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyan Ganga Public School</title>
     <link rel="stylesheet" href="./css/utils.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/home_page.css">
     <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="flexbox">
     <header id="header"></header>
     <section id="login_box" class="flexbox login_box">
-        <img src="./assets/svg/close.svg" alt="Close Button" id="close">
-        <img src="./assets/svg/lock.svg" alt="Lock" class="lock">
+        <img src="./assets/svg/svg_header/close.svg" alt="Close Button" id="close" onclick="closeBox()">
+        <img src="./assets/svg/svg_header/lock.svg" alt="Lock" class="lock">
 
-        <div class="first_text flexbox">
+        <a href="./school_login.html" class="first_text flexbox">
             <h3>School Login</h3>
-            <img src="./assets/svg/arrow_right.svg" alt="Arrow">
-        </div>
+            <img src="./assets/svg/svg_header/arrow_right.svg" alt="Arrow">
+        </a>
         <hr>
-        <div class="second_text flexbox">
+        <a href="./student_login.html" class="second_text flexbox">
             <h3>Parents / Students Login</h3>
-            <img src="./assets/svg/arrow_right.svg" alt="Arrow">
-        </div>
-        <img src="./assets/svg/dot.svg" alt="Dots" class="dot">
+            <img src="./assets/svg/svg_header/arrow_right.svg" alt="Arrow">
+        </a>
+        <img src="./assets/svg/svg_header/dot.svg" alt="Dots" class="dot">
     </section>
 
-    <main id="main">
+    <main id="main_home_page">
         <div class="registration flexbox">
             <h3>A Co-educational pre-k through 8th grade school approved by Govt. of Bihar <span>( Reg. No. -
                     15AR/PVT/2017 )</span></h3>
@@ -76,16 +76,22 @@
         </section>
 
         <section class="speciality flexbox">
-            <div class="container_middle"></div>
+            <div class="container_middle flexbox">
+
+                <h1>What Makes Us Special ?</h1>
+                <hr>
+                <br><br>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At <span>"Gyan Ganga Public School"</span>, We encourage and provide opportunities to our students to volunteer on campus, in the greater community, and around the world.</h3>
+                <br>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is a place that <span>celebrates</span> the <span>Individualism</span> of each and every children in a nurturing community with a well-rounded program.</h3>
+                <br>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our school is a community. In fact, it is a <span>family</span>. From pre-school through the 8th grade our students are <span>challenged</span> and <span>supported</span> by a caring group of educators, friends, and parents.</h3>
+                <br>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We aim to empower our students to <span>"Grow as Individuals"</span> to <span>"Get out of themselves"</span> with strong open discerning minds with a global perspective, preparing them to make a mark in the global village - the world has come to be today.</h3>
+                <br>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our graduates are <span>confident, academically prepared, socially adept,</span> and <span>flourish</span> at a wide range of high schools, where they continue to live out the School's motto of <span>“Explore, Engage, and Connect.”</span></h3>
+            </div>
         </section>
-
-
-
-
-
-
-
-
         <section class="academics flexbox">
             <div class="academic_programs flexbox">
                 <h2>Our Academic Programs</h2>
@@ -201,6 +207,22 @@
 
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>
+    <script>
+        // Login Box Functions
+        const main_home_page = document.getElementById('main_home_page');
+
+        function loginBox() {
+            login_box.style.display = "flex";
+            main_home_page.style.filter = "blur(50px)";
+            footer_top.style.filter = "blur(50px)";
+        }
+
+        function closeBox() {
+            login_box.style.display = "none";
+            main_home_page.style.filter = "blur(0px)";
+            footer_top.style.filter = "blur(0px)";
+        }
+    </script>
 </body>
 
 </html>
