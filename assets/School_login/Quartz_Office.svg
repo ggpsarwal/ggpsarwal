@@ -1,0 +1,14 @@
+<svg id="Quartz_Office" data-name="Quartz Office" xmlns="http://www.w3.org/2000/svg" width="106" height="106" viewBox="0 0 106 106">
+  <g id="Scene_Home" data-name="Scene/Home" transform="translate(-505 -85)">
+    <g id="Clock" transform="translate(505 85)">
+      <circle id="Clock-Frame" cx="53" cy="53" r="53" fill="#ffe2bb"/>
+      <circle id="Time" cx="3" cy="3" r="3" transform="translate(50 8)" fill="#7da496"/>
+      <circle id="Time-2" data-name="Time" cx="3" cy="3" r="3" transform="translate(8 50)" fill="#7da496"/>
+      <circle id="Time-3" data-name="Time" cx="3" cy="3" r="3" transform="translate(92 50)" fill="#7da496"/>
+      <circle id="Time-4" data-name="Time" cx="3" cy="3" r="3" transform="translate(50 92)" fill="#7da496"/>
+      <path id="Hand" d="M53,17l2,35H51Z" fill="#00594c" fill-rule="evenodd"/>
+      <path id="Hand-2" data-name="Hand" d="M62.213,50.213l2,24h-4Z" transform="translate(150.196 62.213) rotate(135)" fill="#00594c" fill-rule="evenodd"/>
+      <circle id="Time-5" data-name="Time" cx="4" cy="4" r="4" transform="translate(49 49)" fill="#00594c"/>
+    </g>
+  </g>
+</svg>
