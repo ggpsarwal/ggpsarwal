@@ -9,6 +9,7 @@ header_top.classList.add('header_top');
 var menu = document.createElement('div');
 menu.classList.add('menu');
 menu.classList.add('flexbox');
+menu.setAttribute("onclick", "menu_open_fn()");
 menu.onmouseover = function () {
   mouseOnMenu();
 };
