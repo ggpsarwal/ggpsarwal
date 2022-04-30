@@ -5,7 +5,9 @@ menu page ka z-index 9999 hai, fixed position ke liye, uper rakhne ke liye, head
 all svg change into photo of svg
 
 
-
 working on menu --> menu.css, menu.js, index.html
 link about.html to home page
 link director.html to home page
+
+link principal.html to home page
+html line 78 for principal sign and css line no. 73 for sign design (commented)
