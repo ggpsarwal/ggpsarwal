@@ -8,3 +8,4 @@ all svg change into photo of svg
 
 working on menu --> menu.css, menu.js, index.html
 link about.html to home page
+link director.html to home page
