@@ -1,0 +1,141 @@
+main {
+    position: relative;
+    width: 100%;
+    height: calc(85vh + 115vh);
+    min-height: calc(893px + 1208px);
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+section.welcome_text {
+    width: 100%;
+    height: 85vh;
+    min-height: 893px;
+    flex-direction: column;
+    padding: 0 200px;
+}
+
+section.welcome_text h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--darkGreen);
+}
+
+section.welcome_text hr {
+    width: 40%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray);
+    border: none;
+}
+
+section.welcome_text h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--darkGreen);
+}
+
+section.welcome_text h3 span.bigger {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+section.welcome_text h3 span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section.mission_values_text {
+    width: 100%;
+    height: 115vh;
+    min-height: 1208px;
+    flex-direction: column;
+    padding: 0 200px;
+}
+
+section.mission_values_text h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--darkGreen);
+}
+
+section.mission_values_text hr {
+    width: 20%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray);
+    border: none;
+}
+
+section.mission_values_text div.mission {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 75px;
+}
+
+section.mission_values_text div.mission h2 {
+    align-self: flex-start;
+    margin: 0 -75px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--darkGreen);
+}
+
+section.mission_values_text div.mission hr {
+    width: 8%;
+    height: 4px;
+    border-radius: 2px;
+    align-self: flex-start;
+    margin: 0 -20px;
+    background-color: var(--gray);
+    border: none;
+}
+
+section.mission_values_text div.mission h3 {
+    font-size: 18px;
+    font-weight: 300;
+    align-self: flex-start;
+    color: var(--darkGreen);
+}
+
+section.mission_values_text div.mission h3 span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+section.mission_values_text div.values {
+    width: 100%;
+    flex-direction: column;
+    padding: 0 75px;
+}
+
+section.mission_values_text div.values h2 {
+    align-self: flex-start;
+    margin: 0 -75px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--darkGreen);
+}
+
+section.mission_values_text div.values hr {
+    width: 8%;
+    height: 4px;
+    border-radius: 2px;
+    align-self: flex-start;
+    margin: 0 40px;
+    background-color: var(--gray);
+    border: none;
+}
+
+section.mission_values_text div.values h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--darkGreen);
+
+    align-self: flex-start;
+}
+
+section.mission_values_text div.values h3 span {
+    font-size: 18px;
+    font-weight: 600;
+}
