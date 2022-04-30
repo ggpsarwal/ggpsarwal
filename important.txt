@@ -1,3 +1,10 @@
 header ka z-index 999 hai, sticky position ke liye, uper rakhne ke liye, baad me adjust krenge
 login box ka z-index 999 hai, fixed position ke liye, uper rakhne ke liye, baad me adjust krenge
+menu page ka z-index 9999 hai, fixed position ke liye, uper rakhne ke liye, header se bhi uper, baad me adjust krenge
 
+all svg change into photo of svg
+
+
+
+working on menu --> menu.css, menu.js, index.html
+link about.html to home page
