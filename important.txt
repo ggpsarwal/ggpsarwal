@@ -11,3 +11,5 @@ link director.html to home page
 
 link principal.html to home page
 html line 78 for principal sign and css line no. 73 for sign design (commented)
+
+link elementary, lower, upper html files into main page
