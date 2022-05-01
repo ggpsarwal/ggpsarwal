@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="20.987" viewBox="0 0 25 20.987">
+  <g id="Office_Dashboard_Download_Small" data-name="Office Dashboard Download Small" transform="translate(-233 -1622.816)">
+    <path id="Rectangle_92" data-name="Rectangle 92" d="M2.5,2.5h0V13.333h20V2.5H2.5M2.5,0h20A2.5,2.5,0,0,1,25,2.5V13.333a2.5,2.5,0,0,1-2.5,2.5H2.5a2.5,2.5,0,0,1-2.5-2.5V2.5A2.5,2.5,0,0,1,2.5,0Z" transform="translate(233 1627.969)" fill="#00594c"/>
+    <path id="Line_31" data-name="Line 31" d="M12.5,1.717H0V-1.5H12.5Z" transform="translate(239.667 1629.112)" fill="#fdf2e3"/>
+    <path id="Line_25" data-name="Line 25" d="M-.037,12.667A1.546,1.546,0,0,1-1.5,11.052V.115A1.546,1.546,0,0,1-.037-1.5,1.546,1.546,0,0,1,1.427.115V11.052A1.546,1.546,0,0,1-.037,12.667Z" transform="translate(245.537 1624.316)" fill="#00594c"/>
+    <path id="Line_26" data-name="Line 26" d="M1.463,9.227A1.465,1.465,0,0,1,0,7.764v-6.3a1.463,1.463,0,0,1,2.927,0v6.3A1.465,1.465,0,0,1,1.463,9.227Z" transform="translate(249.955 1631.54) rotate(45)" fill="#00594c"/>
+    <path id="Line_27" data-name="Line 27" d="M1.463,9.227h0A1.465,1.465,0,0,1,0,7.764v-6.3a1.463,1.463,0,0,1,2.927,0v6.3A1.463,1.463,0,0,1,1.463,9.227Z" transform="translate(247.57 1638.065) rotate(135)" fill="#00594c"/>
+    <circle id="Ellipse_104" data-name="Ellipse 104" cx="1.25" cy="1.25" r="1.25" transform="translate(238.417 1627.969)" fill="#00594c"/>
+    <circle id="Ellipse_105" data-name="Ellipse 105" cx="1.25" cy="1.25" r="1.25" transform="translate(250.917 1627.969)" fill="#00594c"/>
+  </g>
+</svg>

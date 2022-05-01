@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.174" height="21.337" viewBox="0 0 17.174 21.337">
+  <g id="Dustbin_White" data-name="Dustbin White" transform="translate(-1229 -557)">
+    <path id="Rectangle_135" data-name="Rectangle 135" d="M1.561,1.561v8.847A3.647,3.647,0,0,0,5.2,14.052H8.327a3.647,3.647,0,0,0,3.643-3.643V1.561H1.561M0,0H13.531V10.409a5.2,5.2,0,0,1-5.2,5.2H5.2a5.2,5.2,0,0,1-5.2-5.2Z" transform="translate(1230.561 562.725)" fill="#fff"/>
+    <path id="Line_60" data-name="Line 60" d="M14.893.061H-.719A.781.781,0,0,1-1.5-.719.781.781,0,0,1-.719-1.5H14.893a.781.781,0,0,1,.781.781A.781.781,0,0,1,14.893.061Z" transform="translate(1230.5 562.924)" fill="#fff"/>
+    <path id="Line_61" data-name="Line 61" d="M9.689.061H-.719A.781.781,0,0,1-1.5-.719.781.781,0,0,1-.719-1.5H9.689a.781.781,0,0,1,.781.781A.781.781,0,0,1,9.689.061Z" transform="translate(1233.102 561.883)" fill="#fff"/>
+    <path id="Line_62" data-name="Line 62" d="M4.485.061h-5.2A.781.781,0,0,1-1.5-.719.781.781,0,0,1-.719-1.5h5.2a.781.781,0,0,1,.781.781A.781.781,0,0,1,4.485.061Z" transform="translate(1235.704 560.842)" fill="#fff"/>
+    <circle id="Ellipse_127" data-name="Ellipse 127" cx="1.43" cy="1.43" r="1.43" transform="translate(1236.149 557)" fill="#fff"/>
+    <g id="Group_398" data-name="Group 398" transform="translate(1234.464 567.148)">
+      <path id="Line_63" data-name="Line 63" d="M5.985,1.561H.781A.781.781,0,1,1,.781,0h5.2a.781.781,0,1,1,0,1.561Z" transform="translate(1.561 0) rotate(90)" fill="#fff"/>
+      <path id="Line_64" data-name="Line 64" d="M5.985,1.561H.781A.781.781,0,1,1,.781,0h5.2a.781.781,0,1,1,0,1.561Z" transform="translate(5.725 0) rotate(90)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
