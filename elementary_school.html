@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementary School GGPS</title>
+    <link rel="stylesheet" href="./css/utils.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/elementary_school.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body class="flexbox">
+    <header id="header"></header>
+    <section id="login_box" class="flexbox login_box">
+        <img src="./assets/svg/svg_header/close.svg" alt="Close Button" id="close" onclick="closeBox()">
+        <img src="./assets/svg/svg_header/lock.svg" alt="Lock" class="lock">
+
+        <a href="./school_login.html" class="first_text flexbox">
+            <h3>School Login</h3>
+            <img src="./assets/svg/svg_header/arrow_right.svg" alt="Arrow">
+        </a>
+        <hr>
+        <a href="./student_login.html" class="second_text flexbox">
+            <h3>Parents / Students Login</h3>
+            <img src="./assets/svg/svg_header/arrow_right.svg" alt="Arrow">
+        </a>
+        <img src="./assets/svg/svg_header/dot.svg" alt="Dots" class="dot">
+    </section>
+
+    <main id="main_elementary_school_page" class="flexbox">
+        <div class="image flexbox">
+            <img src="./assets/Elementary_School/elementary_school.jpeg" alt="Elementary School">
+            <br><br>
+            <h1>Pre-school Options at Gyan Gang Public School</h1>
+            <hr>
+            <br>
+            <h3>Building a solid learning foundation for three and four-years-old.</h3>
+        </div>
+        <div class="text flexbox">
+            <h3><span>Gyan Gang Public School</span> provides an unparalleled Preschool education for students to begin
+                building a lifelong love of learning.</h3>
+            <br>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>In
+                    these critical early years children:</span></h3>
+            <br>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>-</span>
+                Discover that learning is both fun and challenging.</h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>-</span>
+                Instill contidence and selt-esteem.</h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>-</span>
+                Encourage independence.</h3>
+            <br>
+            <h3>From basic literacy to culture, students experience all aspects of their future education in a manner
+                that is age-appropriate and
+                accessible. Guided by teachers who have a life-long impact, the youngest learners are nurtured and cared
+                for as they embark on
+                their educational career, building upon their natural sense of curiosity.</h3>
+            <br>
+            <h3>Our commitment and passion for establishing growth-mindsets within our students is what separates from
+                other schools offering
+                earv education in the city.</h3>
+            <br>
+            <h3>If you've been searching for the best early education school in the city, or you've been researching
+                programs for early education in
+                the city, look no further than Gyan Ganga Public School</h3>
+            <br>
+            <h3>We provide the foundation children need to excel in kindergarten and beyond, and we do it with their
+                success in mind!</h3>
+            <br><br>
+            <img class="end" src="./assets/End_Section_Dots.svg" alt="End">
+        </div>
+        <div class="learn_more flexbox">
+            <h2>Want to learn more about the Pre School options at GGPS?</h2>
+            <div class="buttons flexbox">
+                <button class="flexbox">Inquire About Preschool</button>
+                <button class="flexbox">Program Affordability&nbsp;&nbsp;<img
+                        src="./assets/Elementary_School/download_button.svg"></button>
+            </div>
+            <br>
+            <img src="./assets/End_Section_Dots.svg" alt="End">
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script>
+        // Login Box Functions
+        const main_elementary_school_page = document.getElementById('main_elementary_school_page');
+
+        function loginBox() {
+            login_box.style.display = "flex";
+            main_elementary_school_page.style.filter = "blur(50px)";
+            footer_top.style.filter = "blur(50px)";
+        }
+
+        function closeBox() {
+            login_box.style.display = "none";
+            main_elementary_school_page.style.filter = "blur(0px)";
+            footer_top.style.filter = "blur(0px)";
+        }
+    </script>
+</body>
+
+</html>

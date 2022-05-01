@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upper School GGPS</title>
+    <link rel="stylesheet" href="./css/utils.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css//upper_school.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body class="flexbox">
+    <header id="header"></header>
+    <section id="login_box" class="flexbox login_box">
+        <img src="./assets/svg/svg_header/close.svg" alt="Close Button" id="close" onclick="closeBox()">
+        <img src="./assets/svg/svg_header/lock.svg" alt="Lock" class="lock">
+
+        <a href="./school_login.html" class="first_text flexbox">
+            <h3>School Login</h3>
+            <img src="./assets/svg/svg_header/arrow_right.svg" alt="Arrow">
+        </a>
+        <hr>
+        <a href="./student_login.html" class="second_text flexbox">
+            <h3>Parents / Students Login</h3>
+            <img src="./assets/svg/svg_header/arrow_right.svg" alt="Arrow">
+        </a>
+        <img src="./assets/svg/svg_header/dot.svg" alt="Dots" class="dot">
+    </section>
+
+    <main id="main_upper_school_page" class="flexbox">
+        <div class="image flexbox">
+            <img src="./assets/Upper_School/upper_school.jpeg" alt="Upper School">
+            <br><br>
+            <h1>Upper School at Gyan Ganga Public School</h1>
+            <hr>
+            <br>
+            <h3>Grades 5-8 are leaders on campus</h3>
+        </div>
+        <div class="text flexbox">
+            <h3>Challenging academics in the Upper School at <span>GGPS</span>, in concert with community service,
+                athletics, visual and performing arts,
+                extra curricular activities, and social events, provide excellent preparation for students to enter the
+                higher institution of their
+                choice.</h3>
+            <br>
+            <h3>Continued emphasis on leadership skills and character development, with guidance from teachers and
+                advisers, is a hallmark of
+                the Upper School experience and the reason GPS stands out among middle schools in the city.</h3>
+            <br>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Beginning
+                    in fifth grade, students:</span></h3>
+            <br>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>-</span>
+                Focus on developing good life skills.</h3>
+            <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>-</span>
+                Receive instruction on organization, interpretation, retention, test taking, studying, and listening.
+            </h3>
+            <br>
+            <h3>Students at <span>Gyan Gang Public School</span> receive a firm educational foundation, become part of a
+                true community, and develop
+                leadership skills and by the time they complete eighth grade, students have demonstrated their maturity
+                and readiness that
+                translate to their success in higher educations and beyond.</h3>
+            <br>
+            <h3><span>Gyan Gang Public School</span> makes it less of a challenge to find a superior upper school.
+                <span>Bhadasi</span> is the home of our upper school
+                which serves students in fifth grade through eighth grade. The positive reputation we hold in academics
+                and life skills is the
+                reason families favor our upper school!
+            </h3>
+            <br><br>
+            <img class="end" src="./assets/End_Section_Dots.svg" alt="End">
+        </div>
+        <div class="learn_more flexbox">
+            <h2>Want to learn more about the Upper School at GGPS?</h2>
+            <div class="buttons flexbox">
+                <button class="flexbox">Inquire About Upper School</button>
+                <button class="flexbox">Program Affordability&nbsp;&nbsp;<img
+                        src="./assets/Elementary_School/download_button.svg"></button>
+            </div>
+            <br>
+            <img src="./assets/End_Section_Dots.svg" alt="End">
+        </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script>
+        // Login Box Functions
+        const main_upper_school_page = document.getElementById('main_upper_school_page');
+
+        function loginBox() {
+            login_box.style.display = "flex";
+            main_upper_school_page.style.filter = "blur(50px)";
+            footer_top.style.filter = "blur(50px)";
+        }
+
+        function closeBox() {
+            login_box.style.display = "none";
+            main_upper_school_page.style.filter = "blur(0px)";
+            footer_top.style.filter = "blur(0px)";
+        }
+    </script>
+</body>
+
+</html>
