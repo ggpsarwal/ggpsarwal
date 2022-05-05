@@ -76,6 +76,17 @@ main {
     cursor: pointer;
 }
 
+.introduction .text_container h3 span.read_more a {
+    text-decoration: none;
+}
+
+.introduction .text_container h3 span.read_more a:link,
+.introduction .text_container h3 span.read_more a:visited,
+.introduction .text_container h3 span.read_more a:hover,
+.introduction .text_container h3 span.read_more a:active {
+    color: var(--green);
+}
+
 .introduction .director_card {
     width: 30%;
     height: 100%;
@@ -143,7 +154,18 @@ main {
     color: var(--darkGreen);
 }
 
-.introduction .director_card .director_card_body .director_card_body_text button {
+.introduction .director_card .director_card_body .director_card_body_text a {
+    text-decoration: none;
+}
+
+.introduction .director_card .director_card_body .director_card_body_text a:link,
+.introduction .director_card .director_card_body .director_card_body_text a:visited,
+.introduction .director_card .director_card_body .director_card_body_text a:hover,
+.introduction .director_card .director_card_body .director_card_body_text a:active {
+    color: var(--white);
+}
+
+.introduction .director_card .director_card_body .director_card_body_text a button {
     font-size: 18px;
     font-weight: 600;
     color: var(--white);
@@ -156,7 +178,7 @@ main {
     transition: 0.5s;
 }
 
-.introduction .director_card .director_card_body .director_card_body_text button:hover {
+.introduction .director_card .director_card_body .director_card_body_text a button:hover {
     background-color: var(--green_hover);
 }
 
@@ -292,9 +314,24 @@ main {
     padding-bottom: 10px;
 }
 
-.academics .academic_programs .container_cards .elementary .read_more,
-.academics .academic_programs .container_cards .middle .read_more,
-.academics .academic_programs .container_cards .upper .read_more {
+.academics .academic_programs .container_cards .elementary a:link,
+.academics .academic_programs .container_cards .elementary a:visited,
+.academics .academic_programs .container_cards .elementary a:hover,
+.academics .academic_programs .container_cards .elementary a:active,
+.academics .academic_programs .container_cards .middle a:link,
+.academics .academic_programs .container_cards .middle a:visited,
+.academics .academic_programs .container_cards .middle a:hover,
+.academics .academic_programs .container_cards .middle a:active,
+.academics .academic_programs .container_cards .upper a:link,
+.academics .academic_programs .container_cards .upper a:visited,
+.academics .academic_programs .container_cards .upper a:hover,
+.academics .academic_programs .container_cards .upper a:active {
+    color: var(--white);
+}
+
+.academics .academic_programs .container_cards .elementary a .know_more,
+.academics .academic_programs .container_cards .middle a .know_more,
+.academics .academic_programs .container_cards .upper a .know_more {
     font-size: 18px;
     font-weight: 600;
     color: var(--white);
@@ -307,9 +344,9 @@ main {
     transition: 0.5s;
 }
 
-.academics .academic_programs .container_cards .elementary .read_more:hover,
-.academics .academic_programs .container_cards .middle .read_more:hover,
-.academics .academic_programs .container_cards .upper .read_more:hover {
+.academics .academic_programs .container_cards .elementary a .know_more:hover,
+.academics .academic_programs .container_cards .middle a .know_more:hover,
+.academics .academic_programs .container_cards .upper a .know_more:hover {
     background-color: var(--green_hover);
 }
 
