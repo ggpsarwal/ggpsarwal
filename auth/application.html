@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Admission in GGPS</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+        <script src="./temp.js"></script>
+        <script src="./application.js"></script>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="text-center py-2">
+                <h2>Admission Survey Cum Application Form</h2>
+                <hr>
+                <p class="pb-2"><strong>Thank You</strong> for your interest in <strong>Gyan Ganga Public
+                        School</strong>!<br>We
+                    invite your Application at <strong>GGPS</strong>.</p>
+                <img src="./End-Section-Dots.svg" alt="">
+                <p class="text-center py-5">Please fill out the below Survey, confirming your interest to schedule for
+                    campus visit.</p>
+            </div>
+            <h2 class="text-center py-4">Parents Information</h2>
+            <form id="inputForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <img src="./camera.jpg" alt="Profile Picture" id="parent1photo">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="parent1Image">Parent1 Image*</label>
+                        <input type="file" id="parent1Image" accept="image/png, image/jpeg" class="form-control"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="parent1Name">Parent1 Name*</label>
+                        <input type="text" class="form-control" id="parent1Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="parent1Relation">Parent1 Relationship*</label>
+                        <select class="custom-select" id="parent1Relation" required>
+                            <option value="">Choose...</option>
+                            <option value="Father">Father</option>
+                            <option value="Mother">Mother</option>
+                            <option value="Guardian">Guardian</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="parent1MaritalStatus">Parent1 Marital Status*</label>
+                        <select class="custom-select" id="parent1MaritalStatus" required>
+                            <option value="">Choose...</option>
+                            <option value="Single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="Married">Separated</option>
+                            <option value="Divorced">Divorced</option>
+                            <option value="Widowed/Widower">Widowed/Widower</option>
+                            <option value="Remarried">Remarried</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="parent1Occupation">Parent1 Occupation*</label>
+                        <input type="text" class="form-control" id="parent1Occupation" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <img src="./camera.jpg" alt="Profile Picture" id="parent2photo">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="parent2Image">Parent2 Image</label>
+                        <input type="file" id="parent2Image" accept="image/png, image/jpeg" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="parent2Name">Parent 2 Name</label>
+                        <input type="text" class="form-control" id="parent2Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="parent2Relation">Parent 2 Relationship</label>
+                        <select class="custom-select" id="parent2Relation">
+                            <option value="">Choose...</option>
+                            <option value="Father">Father</option>
+                            <option value="Mother">Mother</option>
+                            <option value="Guardian">Guardian</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="parent2MaritalStatus">Parent 2 Marital Status</label>
+                        <select class="custom-select" id="parent2MaritalStatus">
+                            <option value="">Choose...</option>
+                            <option value="Single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="Married">Separated</option>
+                            <option value="Divorced">Divorced</option>
+                            <option value="Widowed/Widower">Widowed/Widower</option>
+                            <option value="Remarried">Remarried</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="parent2Occupation">Parent 2 Occupation</label>
+                        <input type="text" class="form-control" id="parent2Occupation" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email*</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputMobile">Mobile Number*</label>
+                        <input type="tel" class="form-control" id="inputMobile" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress">Address*</label>
+                        <input type="text" class="form-control" id="inputAddress" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCity">City*</label>
+                        <input type="text" class="form-control" id="inputCity" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="inputState">State*</label>
+                        <input type="text" class="form-control" id="inputState" required>
+                    </div>
+                    <div class="form-group col-md-2">
+                        <label for="inputZip">Zip*</label>
+                        <input type="text" class="form-control" id="inputZip" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputCountry">Country*</label>
+                        <input type="text" class="form-control" id="inputCountry" required>
+                    </div>
+                </div>
+
+                <h2 class="text-center my-2">Child Information</h2>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <img src="./camera.jpg" alt="Profile Picture" id="childphoto">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="childImage">Child's Image*</label>
+                        <input type="file" id="childImage" accept="image/png, image/jpeg" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="childName">Child's Full Name*</label>
+                        <input type="text" class="form-control" id="childName" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputDob">Child's Date of Birth*</label>
+                        <input type="date" class="form-control" id="inputDob" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="currentGrade">Current Grade</label>
+                        <select class="custom-select" id="currentGrade">
+                            <option value="">Choose...</option>
+                            <option value="Nursery">Nursery</option>
+                            <option value="LKG">L.K.G</option>
+                            <option value="UKG">U.K.G</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="interesetedGrade">Grade Intereseted In*</label>
+                        <select class="custom-select" id="interesetedGrade" required>
+                            <option value="">Choose...</option>
+                            <option value="Nursery">Nursery</option>
+                            <option value="LKG">L.K.G</option>
+                            <option value="UKG">U.K.G</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputGender">Gender*</label>
+                        <select class="custom-select" id="inputGender" required>
+                            <option value="">Choose...</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <h2 class="text-center my-3">Other Information</h2>
+
+                <p>I would ...</p>
+                <div class="form-row">
+                    <div class="form-group col-md-1">
+
+                    </div>
+                    <div class="form-group col-md-11">
+                        <input type="checkbox" name="visit" id="visit" value="visit">
+                        <label for="visit">Like to schedule my visit*</label>
+                        <br>
+                        <input type="checkbox" name="contact" id="contact" value="contact">
+                        <label for="contact">Like someone to contact me*</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="qa">Any questions or comments do you have?</label>
+                        <br>
+                        <textarea name="" id="qa" cols="5" rows="4" placeholder="Your questions or comments here"
+                            class="form-control"></textarea>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-primary my-5 ">Submit Admission Form</button>
+                </div>
+
+            </form>
+            <div>
+                <a href="./admission.html">If already submitted, check here your details</a>
+            </div>
+            <div class="py-4">
+                <h6>NON-DISCRIMINATION STATEMENT:</h6>
+                <P>Gyan Ganga Public School prohibits discrimination and harassment against any member of the School
+                    community on the basis of race, color, religion, gender identity or expression, age, disability,
+                    personal appearance, marital status, economic background, political affiliation, or amnesty.</P>
+                <div class="text-center">
+                    <img src="./End-Section-Dots.svg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </body>
+
+</html>
