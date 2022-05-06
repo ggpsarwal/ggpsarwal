@@ -4,4 +4,4 @@
 https://ggpsarwal.github.io/ggpsarwal/
 
 
-https://ggpsarwal.github.io/ggpsarwal/auth
+https://ggpsarwal.github.io/ggpsarwal/auth/main.html
