@@ -127,6 +127,8 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
 
+
+
             inputForm.addEventListener('submit', (e) => {
                 const studentaadhar = document.getElementById('studentaadhar');
                 const parent1aadhar = document.getElementById('parent1aadhar');
@@ -145,7 +147,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
                     alert("Details & Documents Submitted Successfully!");
-                    window.location("/main.html")
+                    
+
+
+                    window.location("./pay.html");
+
+
                 } else {
                     alert("Aadhaar should be of 12 Digits ")
                 }
@@ -160,4 +167,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         }
     })
+
+    
 });
