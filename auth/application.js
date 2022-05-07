@@ -159,6 +159,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     Your URN is : ${userData.URN} 
                     please save it for future use`);
 
+                    window.location('./search.html');
+
 
                 } else {
                     // doc.data() will be undefined in this case
