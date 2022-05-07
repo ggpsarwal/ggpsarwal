@@ -25,3 +25,4 @@ https://ggpsarwal.github.io/ggpsarwal/auth/admission.html
 https://ggpsarwal.github.io/ggpsarwal/auth/search.html
 
 
+https://ggpsarwal.github.io/ggpsarwal/auth/pay.html
