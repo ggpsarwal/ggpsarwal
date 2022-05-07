@@ -18,7 +18,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const parent2aadhar = document.getElementById('parent2aadhar');
     const parent2aadharpdf = document.getElementById('parent2aadharpdf');
 
-
     // getting data
 
     // var docRef = db.collection("admissionForm").doc(`${URN}`);
