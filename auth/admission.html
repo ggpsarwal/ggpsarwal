@@ -5,51 +5,112 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admission in GGPS</title>
+        <title>Admission - GGPS</title>
+        <style>
+            #img {
+                max-width: 180px;
+                border: 1px solid yellowgreen;
+                border-radius: 12px;
+            }
+        </style>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="./style.css" type="text/css">
+
+
         <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script> 
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+
+
         <script src="./temp.js"></script>
         <script src="./admission.js"></script>
+
     </head>
 
     <body>
-
         <div class="container text-center">
-            <div class="py-3">
-                <h4>Admission Form</h4>
+            <h3 class="text-center">See you at the campus soon</h3>
+            <div class="card p-4 m-2">
+                <div class="row justify-content-md-center">
+                    <div class="col col-lg-5">
+                        <img src="./camera.jpg" alt="student image" id="img" class="img-thumbnail py-3 my-3">
+                    </div>
+                    <div class="col-md-auto ">
+                        <p class="py-2 my-2 ">Welcome</p>
+                        <p><strong id="studentname">Name</strong></p>
+                    </div>
+                </div>
                 <hr>
-                <p>Start your admission journey with us!</p>
+                <p>Please fill out the below survey, In order to proceed further with your candidature</p>
+                <h3 class="text-center py-4">Personal Information</h3>
+
+                <form id="inputForm">
+                    <div class="form-row text-left">
+                        <div class="form-group col-md-4">
+                            <label for="URN">URN*</label>
+                            <input type="text" class="form-control" placeholder="URN" id="URN" disabled>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="name">Sudent's Name*</label>
+                            <input type="text" class="form-control" id="name" placeholder="Sudent's Name" disabled>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="allotedgrade">Allotted Grade*</label>
+                            <input type="text" class="form-control" placeholder="Alloted Grade" id="allotedgrade" disabled>
+                        </div>
+                    </div>
+                    <div class="form-row text-left">
+                        <div class="form-group col-md-4">
+                            <label for="studentaadhar">Aadhaar No.*</label>
+                            <input type="text" class="form-control" id="studentaadhar" placeholder="Enter Aadhaar No."
+                                required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="studentaadharpdf">Add Aadhaar*</label>
+                            <input type="file" id="studentaadharpdf" accept=".pdf" class="form-control" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="studentdobpdf">Add Birth Certificate</label>
+                            <input type="file" id="studentdobpdf" accept=".pdf" class="form-control">
+                        </div>
+                    </div>
+
+                    <h3 class="text-center py-5">Parents Information</h3>
+
+                    <div class="form-row text-left">
+                        <div class="form-group col-md-6">
+                            <label for="parent1aadhar">Parent 1 Aadhaar No.*</label>
+                            <input type="text" class="form-control" id="parent1aadhar"
+                                placeholder="Enter Parent 1 Aadhaar No." required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="parent1aadharpdf">Add Parent 1 Aadhaar*</label>
+                            <input type="file" id="parent1aadharpdf" accept=".pdf" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="form-row text-left">
+                        <div class="form-group col-md-6">
+                            <label for="parent2aadhar">Parent 2 Aadhaar No.</label>
+                            <input type="text" class="form-control" id="parent2aadhar"
+                                placeholder="Enter Parent 2 Aadhaar No.">
+                        </div>
+                        
+                        <div class="form-group col-md-6">
+                            <label for="parent2aadharpdf">Add Parent 2 Aadhaar</label>
+                            <input type="file" id="parent2aadharpdf" accept=".pdf" class="form-control" >
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary my-5 ">Submit Details</button>
+
+
+                </form>
+
             </div>
-            <div class="card text-center">
-                <div class="card-header">
-                    Search Your Application at GGPS
-                </div>
-                <div class="card-body">
-                    <p class="card-text">Enter Your 13-Digits Unique Reference Number ( URN ) *.</p>
-                    
-                    <input type="text" class="form-control" placeholder="Enter 13-Digits URN" id="inputURN">
-                </div>
-                <div class="card-footer text-muted">
-                    <button class="btn btn-primary" id="search">Search & Proceed</button>
-                </div>
-            </div>
-            <p class="py-3"></p>
             <img src="./End-Section-Dots.svg" alt="">
-            <div class="text-left py-5">
-                Want to submit application form,<a href="./application.html"> Submit Here</a>
-            </div>
-            
-            <div id="data">
-
-            </div>
-
         </div>
+
 
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
