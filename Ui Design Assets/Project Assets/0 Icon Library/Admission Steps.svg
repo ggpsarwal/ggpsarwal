@@ -53,8 +53,8 @@ Your Visit" transform="translate(863 2407)" fill="#00594c" font-size="25" font-f
       <text id="Visit_GGPS" data-name="Visit
 GGPS" transform="translate(1059 2408)" fill="#00594c" font-size="25" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-27.5" y="0">Visit</tspan><tspan x="-34.413" y="38">GGPS</tspan></text>
       <text id="Testing" transform="translate(1254 2408)" fill="#00594c" font-size="25" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-46.8" y="0">Testing</tspan></text>
-      <text id="Fill_Admission_Form" data-name="Fill
-Admission Form" transform="translate(1450 2410)" fill="#00594c" font-size="25" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-17.05" y="0">Fill</tspan><tspan x="-103.062" y="38">Admission Form</tspan></text>
+      <text id="Fee_Payment" data-name="Fee
+Payment" transform="translate(1450 2410)" fill="#00594c" font-size="25" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-22.05" y="0">Fee</tspan><tspan x="-57.563" y="38">Payment</tspan></text>
     </g>
   </g>
 </svg>
