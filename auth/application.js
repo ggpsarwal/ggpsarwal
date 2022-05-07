@@ -159,8 +159,18 @@ document.addEventListener('DOMContentLoaded', function () {
                     Your URN is : ${userData.URN} 
                     please save it for future use`);
 
-                    window.location('./search.html');
 
+                    let text = "Have saved your URN!\nEither OK or Cancel.";
+                    if (confirm(text) == true) {
+                        text = "You need to fill more Details!";
+                        alert(text);
+                        window.location('./search.html');
+                    } else {
+                        
+                        alert(`
+                                Your URN is : ${userData.URN} 
+                                please save it for future use`);
+                    }
 
                 } else {
                     // doc.data() will be undefined in this case
@@ -178,7 +188,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     });
-
 
 
 });
