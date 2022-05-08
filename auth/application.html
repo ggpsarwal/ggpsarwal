@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="./style.css" type="text/css">
+
         <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
@@ -31,8 +32,75 @@
                 <p class="text-center py-5">Please fill out the below Survey, confirming your interest to schedule for
                     campus visit.</p>
             </div>
-            <h2 class="text-center py-4">Parents Information</h2>
             <form id="inputForm">
+                <h2 class="text-center py-2">Child Information</h2>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <img src="./camera.jpg" alt="Profile Picture" id="childphoto">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="childImage">Child's Image*</label>
+                        <input type="file" id="childImage" accept="image/png, image/jpeg" class="form-control" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="childName">Child's Full Name*</label>
+                        <input type="text" class="form-control" id="childName" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputDob">Child's Date of Birth*</label>
+                        <input type="date" class="form-control" id="inputDob" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="currentGrade">Current Grade</label>
+                        <select class="custom-select" id="currentGrade">
+                            <option value="">Choose...</option>
+                            <option value="Nursery">Nursery</option>
+                            <option value="LKG">L.K.G</option>
+                            <option value="UKG">U.K.G</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="interesetedGrade">Grade Intereseted In*</label>
+                        <select class="custom-select" id="interesetedGrade" required>
+                            <option value="">Choose...</option>
+                            <option value="Nursery">Nursery</option>
+                            <option value="LKG">L.K.G</option>
+                            <option value="UKG">U.K.G</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="inputGender">Gender*</label>
+                        <select class="custom-select" id="inputGender" required>
+                            <option value="">Choose...</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+
+                <h2 class="text-center py-5">Parents Information</h2>
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <img src="./camera.jpg" alt="Profile Picture" id="parent1photo">
@@ -158,71 +226,9 @@
                     </div>
                 </div>
 
-                <h2 class="text-center my-2">Child Information</h2>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <img src="./camera.jpg" alt="Profile Picture" id="childphoto">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="childImage">Child's Image*</label>
-                        <input type="file" id="childImage" accept="image/png, image/jpeg" class="form-control" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="childName">Child's Full Name*</label>
-                        <input type="text" class="form-control" id="childName" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputDob">Child's Date of Birth*</label>
-                        <input type="date" class="form-control" id="inputDob" required>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-4">
-                        <label for="currentGrade">Current Grade</label>
-                        <select class="custom-select" id="currentGrade">
-                            <option value="">Choose...</option>
-                            <option value="Nursery">Nursery</option>
-                            <option value="LKG">L.K.G</option>
-                            <option value="UKG">U.K.G</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="interesetedGrade">Grade Intereseted In*</label>
-                        <select class="custom-select" id="interesetedGrade" required>
-                            <option value="">Choose...</option>
-                            <option value="Nursery">Nursery</option>
-                            <option value="LKG">L.K.G</option>
-                            <option value="UKG">U.K.G</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                        </select>
-                    </div>
-                    <div class="form-group col-md-4">
-                        <label for="inputGender">Gender*</label>
-                        <select class="custom-select" id="inputGender" required>
-                            <option value="">Choose...</option>
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                </div>
+
+
+            
 
                 <h2 class="text-center my-3">Other Information</h2>
 

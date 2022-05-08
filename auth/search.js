@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     img.src = userData.childphotourl;
 
                     document.getElementById("admission").style.display = "block";
+                    document.getElementById("details").style.display = "block";
 
                 } else {
                     // doc.data() will be undefined in this case
@@ -127,8 +128,6 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
 
-
-
             inputForm.addEventListener('submit', (e) => {
                 const studentaadhar = document.getElementById('studentaadhar');
                 const parent1aadhar = document.getElementById('parent1aadhar');
@@ -147,10 +146,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
                     alert("Details & Documents Submitted Successfully!");
-                    
 
-
-                    window.location("./pay.html");
+                    document.getElementById("admission").style.display = "none";
+                    alert("Please make payment of admission fee");
+                    document.getElementById("payment").style.display = "block";
 
 
                 } else {
@@ -160,13 +159,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             });
 
-
-
         } else {
             alert("make sure URN is of 13 Digits");
 
         }
     })
 
-    
+
 });
