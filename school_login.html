@@ -11,6 +11,16 @@
         <link rel="stylesheet" href="./css/header.css">
         <link rel="stylesheet" href="./css/school_login.css">
         <link rel="stylesheet" href="./css/footer.css">
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+
+        <script src="./js/temp.js"></script>
+        <script src="./js/schoollogin.js"></script>
+
     </head>
 
     <body class="flexbox">
@@ -40,21 +50,22 @@
                 <div class="school_login_form flexbox">
                     <img src="./assets/School_login/Office_Girl.svg" alt="Login_Girl">
                     <h2>School Login</h2>
-                    <form action="" class="flexbox">
+                    <form class="flexbox" id="inputForm">
                         <div class="box flexbox">
                             <div class="input_text flexbox">
                                 <img src="./assets/svg/svg_school_login/Username.svg">
-                                <input type="text" name="username" id="username" placeholder="Username">
+
+                                <input type="email" class="form-control" id="inputEmail">
                             </div>
                             <hr>
                         </div>
                         <div class="box flexbox">
                             <div class="input_text flexbox">
                                 <img src="./assets/svg/svg_school_login/Password.svg">
-                                <input type="password" name="password" id="password" placeholder="Password">
+
+                                <input type="password" class="form-control" id="inputPassword">
                             </div>
                             <hr>
-                            <a href="#">Forgot Password ?</a>
                         </div>
                         <button type="submit">Log In</button>
                     </form>

@@ -3,6 +3,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    const inputForm = document.getElementById('inputForm');
     const inputEmail = document.getElementById('inputEmail');
     const inputPassword = document.getElementById('inputPassword');
 
