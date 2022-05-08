@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 inputForm.reset();
 
                 setTimeout(() => {
-                    window.location = "https://ggpsarwal.github.io/ggpsarwal/profile.html"
+                    window.location = "https://ggpsarwal.github.io/ggpsarwal/profile/index.html"
                 }, 2000);
 
 
