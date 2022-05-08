@@ -164,12 +164,18 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (confirm(text) == true) {
                         text = "You need to fill more Details!";
                         alert(text);
-                        window.location('./search.html');
+                        setTimeout(() => {
+                            window.location = "https://ggpsarwal.github.io/ggpsarwal/auth/search.html"
+                        }, 2000);
                     } else {
-                        
                         alert(`
-                                Your URN is : ${userData.URN} 
-                                please save it for future use`);
+                        Your URN is : ${userData.URN} 
+                        please save it for future use`);
+                        text = "You need to fill more Details!";
+                        alert(text);
+                        setTimeout(() => {
+                            window.location = "https://ggpsarwal.github.io/ggpsarwal/auth/search.html"
+                        }, 2000);
                     }
 
                 } else {
@@ -188,6 +194,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
     });
+
+
 
 
 });
