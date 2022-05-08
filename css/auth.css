@@ -1,0 +1,62 @@
+
+
+.updateprofile{
+    background-color: #638eb9;
+    padding-bottom: 30px;
+
+}
+.contact-us{
+    background-color: #ced4da;
+    padding-bottom: 30px;
+}
+
+form{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.flex-row{
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 500px) {
+    .flex-row {
+      flex-direction: row;
+      gap: 32px;
+    }
+  }
+
+.flex-row > input, button{
+    display: block;
+}
+
+.flex-row > input, textarea , select{
+     width: 100%;
+     padding: 8px;
+     border: 1px solid #ced4da;
+}
+
+.flex-row > input:focus, textarea:focus{
+     outline: none;
+}
+
+.flex-row > input{
+    margin-bottom: 16px;
+}
+
+.flex-row > textarea{
+    height: 100%;
+    resize: none;
+}
+
+textarea{
+    resize: none;
+}
+
+#childphoto, #photo, #parent1photo, #parent2photo{
+    border: 2px solid blue;
+    border-radius: 50%;
+    padding: 16px;
+    margin: 0 22px;
+    width: 150px;
+}
