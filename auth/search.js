@@ -6,10 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const inputForm = document.getElementById('inputForm');
 
     const studentname = document.getElementById('studentname');
-    const name = document.getElementById('name');
     const img = document.getElementById('img');
-    const URN = document.getElementById('URN');
-    const allotedgrade = document.getElementById('allotedgrade');
 
 
     const studentaadharpdf = document.getElementById('studentaadharpdf');
@@ -31,9 +28,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     // console.log(userData);
 
                     studentname.innerText = userData.childName;
-                    name.value = userData.childName;
-                    URN.value = userData.URN;
-                    allotedgrade.value = userData.interesetedGrade;
                     img.src = userData.childphotourl;
 
                     document.getElementById("admission").style.display = "block";
