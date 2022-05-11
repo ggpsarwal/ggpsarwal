@@ -27,10 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             tablebody.innerHTML = outhtml;
 
-
-
-
-
         });
     });
 

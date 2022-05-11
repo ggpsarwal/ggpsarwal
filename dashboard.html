@@ -10,25 +10,96 @@
             integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
-        <!-- <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script> -->
+        <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
 
-        <script src="./js/profile.js"></script>
-        
+        <script src="./js/dashboard.js"></script>
+        <script src="./js/temp.js"></script>
+
+        <style>
+            #Credentails, #alumnitable, #studenttable{
+                display: none;
+            }
+        </style>
+
+
     </head>
 
     <body>
 
         <div class="container">
-            <h2 class="text-center">
-                Dashboard
-            </h2>
+            <div class="row text-center py-5">
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Students</h5>
+                            <button class="btn btn-primary" onclick="getStudents();">Manage</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Alumni</h5>
+                            <button class="btn btn-primary" onclick="getAlumni();">Manage</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Downloads</h5>
+                            <button class="btn btn-primary" onclick="getDownloads();">Manage</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Circulars</h5>
+                            <button class="btn btn-primary" onclick="getCirculars();">Manage</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="studenttable">
+                <table class="table table-bordered" >
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">URN</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studenttablebody">
+    
+                    </tbody>
+                </table>
+            </div>
+            <div id="alumnitable">
+                <table class="table table-bordered" >
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">URN</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Gender</th>
+                            <th scope="col">D.O.A</th>
+                            <th scope="col">D.O.P</th>
+                        </tr>
+                    </thead>
+                    <tbody id="alumnitablebody">
+    
+                    </tbody>
+                </table>
+            </div>
         </div>
-
-
 
 
 

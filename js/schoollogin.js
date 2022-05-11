@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 inputForm.reset();
 
                 setTimeout(() => {
-                    window.location = "https://ggpsarwal.github.io/ggpsarwal/dashboard.html"
+                    window.location = "./dashboard.html"
                 }, 2000);
 
 
