@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // doc.data() is never undefined for query doc snapshots
             const data = doc.data();
             // console.log(doc.id, " => ", data);
+            console.log(data);
 
             outhtml += `<tr>
                     <th scope="row">${num}</th>

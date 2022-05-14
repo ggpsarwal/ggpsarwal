@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
             var uid = user.uid;
+            console.log(uid);
             if (uid == "VmFjXALslNhSbYff2gNeqH0eVdU2") {
 
 

@@ -26,6 +26,20 @@ document.addEventListener('DOMContentLoaded', function () {
                     // console.log("Document data:", doc.data());
                     const userData = doc.data();
                     // console.log(userData);
+                    // signup
+                    const pass = "909090";
+                    auth.createUserWithEmailAndPassword(userData.inputEmail, pass)
+                        .then((userCredential) => {
+                            // Signed up and Signed in 
+                            // console.log(userCredential);
+                        })
+                        .catch((error) => {
+                            var errorCode = error.code;
+                            var errorMessage = error.message;
+                            console.log(errorCode);
+                            console.log(errorMessage);
+                        });
+                    // signup
 
                     studentname.innerText = userData.childName;
                     img.src = userData.childphotourl;

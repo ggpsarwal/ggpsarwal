@@ -1,16 +1,19 @@
 "use strict";
 
-
 document.addEventListener('DOMContentLoaded', () => {
+
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
+            // User is signed in, see docs for a list of available properties
+            // https://firebase.google.com/docs/reference/js/firebase.User
             var uid = user.uid;
             var tenantId = user.tenantId;
             const emailVerified = user.emailVerified
             const creationTime = user.metadata.creationTime;
             const lastSignInTime = user.metadata.lastSignInTime;
+            alert(uid);
             console.log(user);
-            console.log(uid);
+            // console.log(user);
             // console.log(tenantId);
             // console.log(emailVerified);
             // console.log("creationTime : " + creationTime);
@@ -63,6 +66,12 @@ document.addEventListener('DOMContentLoaded', () => {
             //             </div>`;
             //         }
 
+            //         outhtml += `<button class="btn btn-outline-success my-2 my-sm-0" onclick="resetPassword()" id="resetPassword">Reset Password</button>
+            //         <br><br><button class="btn btn-outline-danger my-2 my-sm-0" onclick="deleteUser()" id="deleteAccount">Delete Account</button>
+            //         <br><br>
+                    
+            //         `;
+
             //         document.querySelector('.userdata').innerHTML = outhtml;
 
             //     } else {
@@ -75,7 +84,34 @@ document.addEventListener('DOMContentLoaded', () => {
             // // getting data
 
         } else {
-            document.querySelector('.userdata').innerHTML = "No Active user Found / User is signed out";
+            alert("No Active user Found / User is signed out");
         }
     });
+
 });
+
+
+function signOut() {
+    auth.signOut();
+    alert("SignOut Successfully from System");
+    document.querySelector('.userdata').innerHTML = "";
+
+}
+
+
+
+function resetPassword() {
+    const user = firebase.auth().currentUser;
+    firebase.auth().sendPasswordResetEmail(user.email)
+        .then(() => {
+            alert("Password reset email sent!");
+
+        })
+        .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log(errorCode, errorMessage);
+
+        });
+}
+
