@@ -15,6 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const parent1aadharpdf = document.getElementById('parent1aadharpdf');
     const parent2aadharpdf = document.getElementById('parent2aadharpdf');
 
+    var userData;
+
     search.addEventListener('click', () => {
         var inputURN = document.getElementById('inputURN').value;
         if (inputURN.length == 13) {
@@ -24,33 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
             docRef.get().then((doc) => {
                 if (doc.exists) {
                     // console.log("Document data:", doc.data());
-                    const userData = doc.data();
+                    userData = doc.data();
                     // console.log(userData);
-                    
-                    // signup
-                    const pass = "909090";
-                    auth.createUserWithEmailAndPassword(userData.inputEmail, pass)
-                        .then((userCredential) => {
-                            // Signed up and Signed in 
-                            // console.log(userCredential);
-                        })
-                        .catch((error) => {
-                            var errorCode = error.code;
-                            var errorMessage = error.message;
-                            console.log(errorCode);
-                            console.log(errorMessage);
-                        });
-                    db.collection('students').doc(`${user.uid}`).set({
-                        inputEmail: inputEmail.value,
-                        inputPassword: inputPassword.value,
-                        URN: inputURN.value
-                    }).then(() => {
-                        inputForm.reset();
-                        // console.log("Document successfully written!");
-                    }).catch((error) => {
-                        console.error("Error writing document: ", error);
-                    });
-                    // signup
 
                     studentname.innerText = userData.childName;
                     img.src = userData.childphotourl;
@@ -148,10 +125,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
             inputForm.addEventListener('submit', (e) => {
+                e.preventDefault();
                 const studentaadhar = document.getElementById('studentaadhar');
                 const parent1aadhar = document.getElementById('parent1aadhar');
                 const parent2aadhar = document.getElementById('parent2aadhar');
-                e.preventDefault();
+
+                // signup
+                const password = "909090";
+                auth.createUserWithEmailAndPassword(userData.inputEmail, password)
+                    .then((userCredential) => {
+                        // Signed up and Signed in 
+                        // console.log(userCredential);
+                    })
+                    .catch((error) => {
+                        // var errorCode = error.code;
+                        // var errorMessage = error.message;
+                        // console.log(errorCode);
+                        // console.log(errorMessage);
+                    });
+                // signup
+
                 if ((studentaadhar.value.length == 12 && parent1aadhar.value.length == 12) || parent2aadhar.value.length == 12) {
                     var setWithMerge = docRef.set({
                         studentaadhar: studentaadhar.value,
@@ -161,6 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         studentdobpdfurl: studentdobpdfurl,
                         parent1aadharpdfurl: parent1aadharpdfurl,
                         parent2aadharpdfurl: parent2aadharpdfurl,
+                        inputPassword: password,
                     }, { merge: true });
 
 
@@ -180,7 +174,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         } else {
             alert("make sure URN is of 13 Digits");
-
         }
     })
 
