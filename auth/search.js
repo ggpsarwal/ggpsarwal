@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     // console.log("Document data:", doc.data());
                     const userData = doc.data();
                     // console.log(userData);
+                    
                     // signup
                     const pass = "909090";
                     auth.createUserWithEmailAndPassword(userData.inputEmail, pass)
@@ -39,6 +40,16 @@ document.addEventListener('DOMContentLoaded', function () {
                             console.log(errorCode);
                             console.log(errorMessage);
                         });
+                    db.collection('students').doc(`${user.uid}`).set({
+                        inputEmail: inputEmail.value,
+                        inputPassword: inputPassword.value,
+                        URN: inputURN.value
+                    }).then(() => {
+                        inputForm.reset();
+                        // console.log("Document successfully written!");
+                    }).catch((error) => {
+                        console.error("Error writing document: ", error);
+                    });
                     // signup
 
                     studentname.innerText = userData.childName;
