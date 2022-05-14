@@ -5,21 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
             var uid = user.uid;
-            console.log(uid);
+            // console.log(uid);
             if (uid == "VmFjXALslNhSbYff2gNeqH0eVdU2") {
 
 
 
 
-
-
-
                 // console.log("You are Admin");
+
+                document.getElementById('dashboard').style.display = "block";
             } else {
                 // console.log("Not admin");
                 setTimeout(() => {
                     window.location = "https://ggpsarwal.github.io/ggpsarwal/school_login.html"
-                }, 10);
+                }, 1);
             }
 
 
@@ -33,6 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+    // document.getElementById('stuBtn').addEventListener('click', viewDetails);
+
 
 });
 
@@ -45,9 +46,9 @@ function getStudents() {
     document.getElementById('alumnitable').style.display = "none";
     document.getElementById('studenttable').style.display = "block";
     const tablebody = document.getElementById('studenttablebody');
-    
+
     var num = 0;
-    
+
 
     db.collection("admissionForm").get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
@@ -56,7 +57,7 @@ function getStudents() {
             const data = doc.data();
             // console.log(doc.id, " => ", data);
 
-           
+
 
             studentouthtml += `<tr>
                     <th scope="row">${num}</th>
@@ -64,14 +65,23 @@ function getStudents() {
                     <td>${data.childName}</td>
                     <td>${data.inputEmail}</td>
                     <td>${data.inputGender}</td>
+                    <td><button class="btn btn-outline-success viewBtn">View Details</button></td>
                   </tr>
             
             `;
 
             tablebody.innerHTML = studentouthtml;
 
+
+
+
         });
+
+
+
+        viewDetails();
     });
+
 
 }
 // get students
@@ -85,7 +95,7 @@ function getAlumni() {
     document.getElementById('alumnitable').style.display = "block";
     const tablebody = document.getElementById('alumnitablebody');
     var num = 0;
-    
+
 
     db.collection("alumni").get().then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
@@ -101,6 +111,7 @@ function getAlumni() {
                 <td>${data.Gender}</td>
                 <td>${data.admissionDate}</td>
                 <td>${data.passingDate}</td>
+                <td><button class="btn btn-outline-success">View Details</button></td>
                 
               </tr>
         
@@ -117,14 +128,40 @@ function getAlumni() {
 function getDownloads() {
     document.getElementById('studenttable').style.display = "none";
     document.getElementById('alumnitable').style.display = "none";
-    
+
 }
 
 
 function getCirculars() {
     document.getElementById('studenttable').style.display = "none";
     document.getElementById('alumnitable').style.display = "none";
-    
+
 }
 
 
+
+function viewDetails() {
+    const viewBtn = document.querySelectorAll('.viewBtn');
+
+    viewBtn.forEach(element => {
+        element.addEventListener('click', () => {
+            const urn = element.parentNode.parentNode.children[1].innerHTML;
+            console.log(urn);
+            // alert("clicked");
+            var docRef = db.collection("admissionForm").doc(`${urn}`);
+            docRef.get().then((doc) => {
+                if (doc.exists) {
+                    // console.log("Document data:", doc.data());
+                    const userData = doc.data();
+                    console.log(userData);
+
+
+                } else {
+                    // doc.data() will be undefined in this case
+                }
+            }).catch((error) => {
+                console.log("Error getting document:", error);
+            });
+        })
+    });
+}
