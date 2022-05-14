@@ -31,10 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-
-    // document.getElementById('stuBtn').addEventListener('click', viewDetails);
-
-
 });
 
 var studentouthtml = ``;
@@ -79,7 +75,7 @@ function getStudents() {
 
 
 
-        viewDetails();
+        viewStudentDetails();
     });
 
 
@@ -111,7 +107,7 @@ function getAlumni() {
                 <td>${data.Gender}</td>
                 <td>${data.admissionDate}</td>
                 <td>${data.passingDate}</td>
-                <td><button class="btn btn-outline-success">View Details</button></td>
+                <td><button class="btn btn-outline-success viewBtn">View Details</button></td>
                 
               </tr>
         
@@ -120,6 +116,8 @@ function getAlumni() {
             tablebody.innerHTML = alumniouthtml;
 
         });
+
+        viewAlumniDetails();
     });
 }
 // get alumni
@@ -140,13 +138,40 @@ function getCirculars() {
 
 
 
-function viewDetails() {
+function viewAlumniDetails() {
     const viewBtn = document.querySelectorAll('.viewBtn');
 
     viewBtn.forEach(element => {
         element.addEventListener('click', () => {
             const urn = element.parentNode.parentNode.children[1].innerHTML;
-            console.log(urn);
+            // console.log(urn);
+            // alert("clicked");
+            var docRef = db.collection("alumni").doc(`${urn}`);
+            docRef.get().then((doc) => {
+                if (doc.exists) {
+                    // console.log("Document data:", doc.data());
+                    const userData = doc.data();
+                    console.log(userData);
+
+
+                } else {
+                    // doc.data() will be undefined in this case
+                }
+            }).catch((error) => {
+                console.log("Error getting document:", error);
+            });
+        })
+    });
+}
+
+
+function viewStudentDetails() {
+    const viewBtn = document.querySelectorAll('.viewBtn');
+
+    viewBtn.forEach(element => {
+        element.addEventListener('click', () => {
+            const urn = element.parentNode.parentNode.children[1].innerHTML;
+            // console.log(urn);
             // alert("clicked");
             var docRef = db.collection("admissionForm").doc(`${urn}`);
             docRef.get().then((doc) => {
@@ -165,3 +190,5 @@ function viewDetails() {
         })
     });
 }
+
+
