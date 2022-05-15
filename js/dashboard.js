@@ -33,6 +33,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
+
+function signOut() {
+    auth.signOut();
+    alert("SignOut Successfully from System");
+
+}
+
 var studentouthtml = ``;
 var alumniouthtml = ``;
 // get students
