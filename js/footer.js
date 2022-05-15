@@ -113,7 +113,8 @@ reach_phone_text_head.innerText = "Phone";
 var reach_phone_text_body = document.createElement('div');
 reach_phone_text_body.classList.add('flexbox');
 reach_phone_text_body.classList.add('reach_phone_text_body');
-reach_phone_text_body.innerText = "(+91) 9771-852570, 8804-542971, 7979-702867";
+reach_phone_text_body.innerHTML = `<a href="tel:9771852570">(+91) 9771-852570,
+8804-542971, 7979-702867</a>`;
 
 // Append Child for phone_text
 reach_phone_text.appendChild(reach_phone_text_head);
@@ -151,7 +152,7 @@ reach_email_text_head.innerText = "E-mail";
 var reach_email_text_body = document.createElement('div');
 reach_email_text_body.classList.add('flexbox');
 reach_email_text_body.classList.add('reach_email_text_body');
-reach_email_text_body.innerText = "gyangangaschool07@gmail.com";
+reach_email_text_body.innerHTML = `<a href="mailto:gyangangaschool07@gmail.com" >gyangangaschool07@gmail.com</a>`;
 
 // Append Child for reach_email_text
 reach_email_text.appendChild(reach_email_text_head);
@@ -205,7 +206,8 @@ links_body_text_1.classList.add('links_body_text_1');
 // Top footer --> Links --> Part 2 --> Text 1 --> Link
 var links_body_text_1_link = document.createElement('h3');
 links_body_text_1_link.classList.add('links_body_text_1_link');
-links_body_text_1_link.innerText = "Gallary";
+links_body_text_1_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/auth/application.html"
+>Admission</a>`;
 
 // Append Child for links_body_text_1
 links_body_text_1.appendChild(links_body_text_1_link);
@@ -218,7 +220,8 @@ links_body_text_2.classList.add('links_body_text_2');
 // Top footer --> Links --> Part 2 --> Text 2 --> Link
 var links_body_text_2_link = document.createElement('h3');
 links_body_text_2_link.classList.add('links_body_text_2_link');
-links_body_text_2_link.innerText = "Admission";
+links_body_text_2_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/gallary.html"
+>Gallary</a>`;
 
 // Append Child for links_body_text_2
 links_body_text_2.appendChild(links_body_text_2_link);
@@ -231,7 +234,8 @@ links_body_text_3.classList.add('links_body_text_3');
 // Top footer --> Links --> Part 2 --> Text 3 --> Link
 var links_body_text_3_link = document.createElement('h3');
 links_body_text_3_link.classList.add('links_body_text_3_link');
-links_body_text_3_link.innerText = "Alumni";
+links_body_text_3_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/alumni.html"
+>Alumni</a>`;
 
 // Append Child for links_body_text_3
 links_body_text_3.appendChild(links_body_text_3_link);
@@ -244,7 +248,8 @@ links_body_text_4.classList.add('links_body_text_4');
 // Top footer --> Links --> Part 2 --> Text 4 --> Link
 var links_body_text_4_link = document.createElement('h3');
 links_body_text_4_link.classList.add('links_body_text_4_link');
-links_body_text_4_link.innerText = "Careers";
+links_body_text_4_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/about.html"
+>About Us</a>`;
 
 // Append Child for links_body_text_4
 links_body_text_4.appendChild(links_body_text_4_link);
@@ -257,7 +262,8 @@ links_body_text_5.classList.add('links_body_text_5');
 // Top footer --> Links --> Part 2 --> Text 5 --> Link
 var links_body_text_5_link = document.createElement('h3');
 links_body_text_5_link.classList.add('links_body_text_5_link');
-links_body_text_5_link.innerText = "Circulars";
+links_body_text_5_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/students.html"
+>Students</a>`;
 
 // Append Child for links_body_text_5
 links_body_text_5.appendChild(links_body_text_5_link);
@@ -270,7 +276,8 @@ links_body_text_6.classList.add('links_body_text_6');
 // Top footer --> Links --> Part 2 --> Text 6 --> Link
 var links_body_text_6_link = document.createElement('h3');
 links_body_text_6_link.classList.add('links_body_text_6_link');
-links_body_text_6_link.innerText = "Contact Us";
+links_body_text_6_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/contactus.html"
+>Contact Us</a>`;
 
 // Append Child for links_body_text_6
 links_body_text_6.appendChild(links_body_text_6_link);

@@ -207,7 +207,7 @@ function viewAlumniDetails() {
                                     </div>
                                     <div class="form-group col-md-4">
                                         <label for="inputCity">City*</label>
-                                        <input type="text" class="form-control" id="inputCity" placeholder="${userData.inputAddress}" required>
+                                        <input type="text" class="form-control" id="inputCity" placeholder="${userData.inputCity}" required>
                                     </div>
                             </div>
 

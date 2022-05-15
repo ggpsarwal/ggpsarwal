@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
+
+            document.getElementById('contain').style.display = "block";
             var uid = user.uid;
             // var tenantId = user.tenantId;
             // const emailVerified = user.emailVerified
@@ -101,5 +103,4 @@ function signOut() {
     alert("SignOut Successfully from System");
 
 }
-
 

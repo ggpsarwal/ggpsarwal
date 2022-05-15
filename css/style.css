@@ -9,3 +9,12 @@ body {
 ::-webkit-scrollbar {
     display: none;
 }
+
+a{
+    text-decoration: none;
+    color: wheat;
+}
+
+a:hover{
+    text-decoration: underline;
+}
