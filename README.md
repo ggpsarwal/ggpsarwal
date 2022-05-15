@@ -28,7 +28,6 @@ Live Demo **[https://ggpsarwal.github.io/ggpsarwal](https://ggpsarwal.github.io/
 │   README.md
 │   school_login.html
 │   student_login.html
-│   tree.md
 │   upper_school.html
 │   
 ├───assets
