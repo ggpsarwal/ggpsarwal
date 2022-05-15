@@ -136,38 +136,52 @@ document.addEventListener('DOMContentLoaded', function () {
                     .then((userCredential) => {
                         // Signed up and Signed in 
                         // console.log(userCredential);
+                        // console.log(userCredential.user.uid);
+                        db.collection('students').doc(`${userCredential.user.uid}`).set({
+                            inputEmail: userData.inputEmail,
+                            URN: userData.URN,
+                            uid: userCredential.user.uid
+                        }).then(() => {
+                            console.log("Document successfully written!");
+                        }).catch((error) => {
+                            console.error("Error writing document: ", error);
+                        });
+
+                        if ((studentaadhar.value.length == 12 && parent1aadhar.value.length == 12) || parent2aadhar.value.length == 12) {
+                            var setWithMerge = docRef.set({
+                                studentaadhar: studentaadhar.value,
+                                parent1aadhar: parent1aadhar.value,
+                                parent2aadhar: parent2aadhar.value,
+                                studentaadharpdfurl: studentaadharpdfurl,
+                                studentdobpdfurl: studentdobpdfurl,
+                                parent1aadharpdfurl: parent1aadharpdfurl,
+                                parent2aadharpdfurl: parent2aadharpdfurl,
+                                inputPassword: password,
+                                uid: userCredential.user.uid
+                            }, { merge: true });
+
+
+                            alert("Details & Documents Submitted Successfully!");
+
+                            document.getElementById("admission").style.display = "none";
+                            alert("Please make payment of admission fee");
+                            document.getElementById("searchbox").style.display = "none";
+                            document.getElementById("payment").style.display = "block";
+
+
+                        } else {
+                            alert("Aadhaar should be of 12 Digits ")
+                        }
+
                     })
                     .catch((error) => {
-                        // var errorCode = error.code;
-                        // var errorMessage = error.message;
-                        // console.log(errorCode);
-                        // console.log(errorMessage);
+                        var errorCode = error.code;
+                        var errorMessage = error.message;
+                        console.log(errorCode);
+                        console.log(errorMessage);
                     });
                 // signup
 
-                if ((studentaadhar.value.length == 12 && parent1aadhar.value.length == 12) || parent2aadhar.value.length == 12) {
-                    var setWithMerge = docRef.set({
-                        studentaadhar: studentaadhar.value,
-                        parent1aadhar: parent1aadhar.value,
-                        parent2aadhar: parent2aadhar.value,
-                        studentaadharpdfurl: studentaadharpdfurl,
-                        studentdobpdfurl: studentdobpdfurl,
-                        parent1aadharpdfurl: parent1aadharpdfurl,
-                        parent2aadharpdfurl: parent2aadharpdfurl,
-                        inputPassword: password,
-                    }, { merge: true });
-
-
-                    alert("Details & Documents Submitted Successfully!");
-
-                    document.getElementById("admission").style.display = "none";
-                    alert("Please make payment of admission fee");
-                    document.getElementById("payment").style.display = "block";
-
-
-                } else {
-                    alert("Aadhaar should be of 12 Digits ")
-                }
 
 
             });
