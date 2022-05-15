@@ -46,6 +46,7 @@ function getStudents() {
     studentouthtml = ``;
     alumniouthtml = ``;
     document.getElementById('alumnitable').style.display = "none";
+    document.getElementById('message').style.display = "none";
     document.getElementById('studenttable').style.display = "block";
     const tablebody = document.getElementById('studenttablebody');
 
@@ -92,6 +93,7 @@ function getAlumni() {
     studentouthtml = ``;
     alumniouthtml = ``;
     document.getElementById('studenttable').style.display = "none";
+    document.getElementById('message').style.display = "none";
     document.getElementById('alumnitable').style.display = "block";
     const tablebody = document.getElementById('alumnitablebody');
     var num = 0;
@@ -130,6 +132,7 @@ function getAlumni() {
 function getDownloads() {
     document.getElementById('studenttable').style.display = "none";
     document.getElementById('alumnitable').style.display = "none";
+    document.getElementById('message').style.display = "none";
 
 }
 
@@ -137,6 +140,44 @@ function getDownloads() {
 function getCirculars() {
     document.getElementById('studenttable').style.display = "none";
     document.getElementById('alumnitable').style.display = "none";
+    document.getElementById('message').style.display = "none";
+
+}
+
+var messageouthtml = ``;
+function getMessage() {
+    messageouthtml = ``;
+    document.getElementById('message').style.display = "block";
+    document.getElementById('studenttable').style.display = "none";
+    document.getElementById('alumnitable').style.display = "none";
+    const tablebody = document.getElementById('messagebody');
+    var num = 0;
+
+
+    db.collection("contact-form").get().then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            num++;
+            // doc.data() is never undefined for query doc snapshots
+            const data = doc.data();
+            // console.log(doc.id, " => ", data);
+
+            messageouthtml += `<tr>
+                <th scope="row">${num}</th>
+                <td>${data.fullName}</td>
+                <td>${data.emailAddress}</td>
+                <td>${data.subject}</td>
+                <td>${data.message}</td>
+                
+              </tr>
+        
+        `;
+
+            tablebody.innerHTML = messageouthtml;
+
+        });
+
+    });
+
 
 }
 
@@ -363,7 +404,7 @@ function viewStudentDetails() {
 
                     document.getElementById('delStu').addEventListener('click', () => {
                         db.collection("admissionForm").doc(`${urn}`).delete().then(() => {
-                           alert("Account successfully deleted!");
+                            alert("Account successfully deleted!");
                         }).catch((error) => {
                             console.log("Error removing document: ", error);
                         });
