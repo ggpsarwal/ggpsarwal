@@ -1,3 +1,5 @@
+"use strict";
+
 const footer = document.getElementById("footer");
 
 // Top footer

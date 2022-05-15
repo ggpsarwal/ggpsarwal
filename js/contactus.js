@@ -1,4 +1,5 @@
 "use strict";
+
 document.addEventListener('DOMContentLoaded', function () {
     // contact form
     const contactForm = document.querySelector(".contact-form");

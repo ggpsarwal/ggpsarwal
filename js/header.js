@@ -1,3 +1,5 @@
+"use strict";
+
 const header = document.getElementById("header");
 
 // Top header

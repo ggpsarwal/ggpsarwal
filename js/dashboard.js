@@ -1,6 +1,5 @@
 "use strict";
 
-
 document.addEventListener('DOMContentLoaded', () => {
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {

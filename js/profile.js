@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             document.getElementById('stuName').innerText = `${Data.childName}`;
                             document.getElementById('stuImg').src = `${Data.childphotourl}`;
 
-                            document.getElementById('main').innerHTML  = `
+                            document.getElementById('main').innerHTML = `
                                 <div class="row p-5">
                                     <div class="col-sm-6">
                                         <div class="card">
@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             `;
 
 
-        
+
                         } else {
                             // doc.data() will be undefined in this case
                         }
