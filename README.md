@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://ggpsarwal.github.io/ggpsarwal"><img src="./assets/logo_ggps.png" alt="Gyan Ganga Public School" width="100"></a>
+  <a href="https://ggpsarwal.github.io/ggpsarwal"><img src="./assets/Logo_Green.png" alt="Gyan Ganga Public School" width="100"></a>
 </div>
 
 <h1 align="center">
