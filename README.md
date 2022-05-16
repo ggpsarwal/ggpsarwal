@@ -18,7 +18,7 @@
 
 <br/><br/>
 # Thank you for being here! ✨<br>
-You can see this project live [here](https://ggpsarwal.github.io/ggpsarwal)
+You can see this project live [here](https://ggpsarwal.github.io/ggpsarwal) (Supports Desktop Only)
 <br>
 <br>Designed and Developed with 💖 By
 <br>[@SinhaAnishKumar](https://www.github.com/SinhaAnishKumar)
