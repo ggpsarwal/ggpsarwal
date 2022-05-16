@@ -1,10 +1,9 @@
 # File Structure
 
----
-
 <br>
 
 ```
+
 │   404.html
 │   about.html
 │   checkout.html
@@ -105,11 +104,13 @@
 │       utils.css
 │       
 ├───Documentations
-│   │   1 Project Report.pdf
-│   │   2 Internship Certificate.pdf
-│   │   3 Appreciation Letter.pdf
-│   │   4 Guide Certificate.pdf
+│   │   README.md
 │   │   
+│   ├───Developers
+│   │       Anish.png
+│   │       Sonu.png
+│   │       Sweta.png
+│   │       
 │   ├───DFDs
 │   │       0.0 0 Level DFD For Admission.svg
 │   │       1.0 1 Level DFD For Student (Admission).svg
@@ -125,8 +126,13 @@
 │   │       Flowchart For Admin Login.svg
 │   │       Flowchart For Student Login.svg
 │   │       
-│   └───Gantt Chart
-│           Gantt Chart.png
+│   ├───Gantt Chart
+│   │       Gantt Chart.png
+│   │       
+│   └───QR-Codes
+│           Drive.png
+│           GitHub.png
+│           Website.png
 │           
 ├───js
 │       application.js
@@ -210,8 +216,8 @@
     │           
     └───Project Assets
         │   Font-Poppins.zip
-        │   Logo Green.png
         │   Logo White.png
+        │   Logo_Green.png
         │   
         ├───0 Icon Library
         │       3 Dots Pop Up.svg
@@ -369,5 +375,5 @@
         └───8 Principal's Desk
                 Principal's Image.jpg
                 Principal's Sign.png
-                
+                      
 ```
