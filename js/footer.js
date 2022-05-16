@@ -222,8 +222,8 @@ links_body_text_2.classList.add('links_body_text_2');
 // Top footer --> Links --> Part 2 --> Text 2 --> Link
 var links_body_text_2_link = document.createElement('h3');
 links_body_text_2_link.classList.add('links_body_text_2_link');
-links_body_text_2_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/gallary.html"
->Gallary</a>`;
+links_body_text_2_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/gallery.html"
+>Gallery</a>`;
 
 // Append Child for links_body_text_2
 links_body_text_2.appendChild(links_body_text_2_link);
@@ -264,8 +264,8 @@ links_body_text_5.classList.add('links_body_text_5');
 // Top footer --> Links --> Part 2 --> Text 5 --> Link
 var links_body_text_5_link = document.createElement('h3');
 links_body_text_5_link.classList.add('links_body_text_5_link');
-links_body_text_5_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/students.html"
->Students</a>`;
+links_body_text_5_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/circulars.html"
+>Circulars</a>`;
 
 // Append Child for links_body_text_5
 links_body_text_5.appendChild(links_body_text_5_link);
