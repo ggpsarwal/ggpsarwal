@@ -6,11 +6,6 @@
   Gyan Ganga Public School
 </h1>
 
-</h1>
-<p align="center">
-  <b>This page contains Project Report of School Website and Online Admission Management System.</b> 🤓
-</p>
-
 <br>
 
 <p align="center">
