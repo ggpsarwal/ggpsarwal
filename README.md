@@ -13,7 +13,7 @@
 </p>
 
 <div align="center">
-  <a href="https://drive.google.com/drive/folders/1-v5BxKo8yGgWKXE9y0y4whspzVWilJcQ?usp=sharing"><img src="./assets/Drive.png" alt="Project Report" width="250"></a>
+  <a href="https://drive.google.com/drive/folders/1-v5BxKo8yGgWKXE9y0y4whspzVWilJcQ?usp=sharing"><img src="./Documentations/QR-Codes/Drive.png" alt="Project Report" width="250"></a>
 </div>
 
 <br/><br/>
