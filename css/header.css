@@ -112,8 +112,8 @@ header {
     text-decoration: none;
 }
 
-.first_text, .second_text {
-    text-decoration: none;
+.first_text, .second_text:hover {
+    text-decoration: none !important;
 }
 
 .first_text h3, .second_text h3 {
