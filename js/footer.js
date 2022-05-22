@@ -208,7 +208,7 @@ links_body_text_1.classList.add('links_body_text_1');
 // Top footer --> Links --> Part 2 --> Text 1 --> Link
 var links_body_text_1_link = document.createElement('h3');
 links_body_text_1_link.classList.add('links_body_text_1_link');
-links_body_text_1_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/auth/application.html"
+links_body_text_1_link.innerHTML = `<a href="https://ggpsarwal.github.io/ggpsarwal/admission.html"
 >Admission</a>`;
 
 // Append Child for links_body_text_1
