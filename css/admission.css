@@ -142,7 +142,7 @@ main .steps .buttons {
     justify-content: space-around;
 }
 
-main .steps .buttons button {
+main .steps .buttons a {
     height: 50px;
     width: 250px;
     font-size: 20px;
@@ -152,16 +152,11 @@ main .steps .buttons button {
     border-radius: 20px;
     border: none;
     transition: 0.5s;
-    cursor: pointer;
-}
-
-main .steps .buttons button:hover {
-    background-color: var(--green_hover);
-}
-
-main .steps .buttons button a {
     text-decoration: none;
-    color: var(--white);
+}
+
+main .steps .buttons a:hover {
+    background-color: var(--green_hover);
 }
 
 main .know_more {
