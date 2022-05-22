@@ -159,6 +159,11 @@ main .steps .buttons button:hover {
     background-color: var(--green_hover);
 }
 
+main .steps .buttons button a {
+    text-decoration: none;
+    color: var(--white);
+}
+
 main .know_more {
     width: 100%;
     height: 65vh;
