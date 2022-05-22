@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15.659" height="16.336" viewBox="0 0 15.659 16.336">
+  <g id="Inquire_Arrow_Brown" data-name="Inquire Arrow Brown" transform="translate(1.414 1.414)">
+    <path id="Line_25" data-name="Line 25" d="M.256-.5A.756.756,0,0,0-.5.256V10.841a.756.756,0,1,0,1.512,0V.256A.756.756,0,0,0,.256-.5Z" transform="translate(6.159 2.325)" fill="#9c3b11"/>
+    <path id="Line_25_-_Outline" data-name="Line 25 - Outline" d="M.256-1.5A1.758,1.758,0,0,1,2.012.256V10.841A1.758,1.758,0,0,1,.256,12.6,1.758,1.758,0,0,1-1.5,10.841V.256A1.758,1.758,0,0,1,.256-1.5Z" transform="translate(6.159 2.325)" fill="#9c3b11"/>
+    <path id="Line_26" data-name="Line 26" d="M.756,0A.756.756,0,0,0,0,.756v7.56a.756.756,0,0,0,1.512,0V.756A.756.756,0,0,0,.756,0Z" transform="translate(5.346 1.069) rotate(-45)" fill="#9c3b11"/>
+    <path id="Line_26_-_Outline" data-name="Line 26 - Outline" d="M.756-1h0A1.756,1.756,0,0,1,2.512.756v7.56a1.756,1.756,0,0,1-3,1.242A1.745,1.745,0,0,1-1,8.316V.756A1.758,1.758,0,0,1,.756-1Z" transform="translate(5.346 1.069) rotate(-45)" fill="#9c3b11"/>
+    <path id="Line_27" data-name="Line 27" d="M.756,0A.756.756,0,0,0,0,.756v7.56a.756.756,0,0,0,1.512,0V.756A.756.756,0,0,0,.756,0Z" transform="translate(1.069 7.485) rotate(-135)" fill="#9c3b11"/>
+    <path id="Line_27_-_Outline" data-name="Line 27 - Outline" d="M.756-1h0A1.758,1.758,0,0,1,2.512.756v7.56A1.756,1.756,0,0,1,.756,10.072,1.756,1.756,0,0,1-1,8.316V.756A1.756,1.756,0,0,1,.756-1Z" transform="translate(1.069 7.485) rotate(-135)" fill="#9c3b11"/>
+  </g>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="250" viewBox="0 0 1250 250">
+  <g id="Admission_Steps" data-name="Admission Steps" transform="translate(-336 -2259)">
+    <path id="Rectangle_93" data-name="Rectangle 93" d="M20,2A18,18,0,0,0,2,20V230a18,18,0,0,0,18,18H1230a18,18,0,0,0,18-18V20a18,18,0,0,0-18-18H20m0-2H1230a20,20,0,0,1,20,20V230a20,20,0,0,1-20,20H20A20,20,0,0,1,0,230V20A20,20,0,0,1,20,0Z" transform="translate(336 2259)" fill="#7da496"/>
+    <g id="Group_190" data-name="Group 190" transform="translate(-29 -4)">
+      <path id="Line_33" data-name="Line 33" d="M1000,1.5H0A1.5,1.5,0,0,1-1.5,0,1.5,1.5,0,0,1,0-1.5H1000a1.5,1.5,0,0,1,1.5,1.5A1.5,1.5,0,0,1,1000,1.5Z" transform="translate(460.5 2345)" fill="#c2c2c2"/>
+      <g id="Group_184" data-name="Group 184">
+        <g id="Group_178" data-name="Group 178" transform="translate(24 12)">
+          <circle id="Ellipse_108" data-name="Ellipse 108" cx="25" cy="25" r="25" transform="translate(423 2308)" fill="rgba(30,236,119,0.6)"/>
+          <circle id="Ellipse_107" data-name="Ellipse 107" cx="12.5" cy="12.5" r="12.5" transform="translate(435 2320)" fill="#1eec77"/>
+        </g>
+        <text id="_1" data-name="1" transform="translate(469 2351)" fill="#fff" font-size="15" font-family="Poppins-SemiBold, Poppins" font-weight="600" letter-spacing="0.1em"><tspan x="0" y="0">1</tspan></text>
+      </g>
+      <g id="Group_185" data-name="Group 185" transform="translate(20)">
+        <g id="Group_179" data-name="Group 179" transform="translate(-25 12)">
+          <circle id="Ellipse_109" data-name="Ellipse 109" cx="25" cy="25" r="25" transform="translate(648 2308)" fill="rgba(30,236,119,0.6)"/>
+          <circle id="Ellipse_110" data-name="Ellipse 110" cx="12.5" cy="12.5" r="12.5" transform="translate(660 2320)" fill="#1eec77"/>
+        </g>
+        <text id="_2" data-name="2" transform="translate(643 2350)" fill="#fff" font-size="15" font-family="Poppins-SemiBold, Poppins" font-weight="600" letter-spacing="0.1em"><tspan x="0" y="0">2</tspan></text>
+      </g>
+      <g id="Group_186" data-name="Group 186" transform="translate(15)">
+        <g id="Group_180" data-name="Group 180" transform="translate(-50 12)">
+          <circle id="Ellipse_111" data-name="Ellipse 111" cx="25" cy="25" r="25" transform="translate(873 2308)" fill="rgba(30,236,119,0.6)"/>
+          <circle id="Ellipse_112" data-name="Ellipse 112" cx="12.5" cy="12.5" r="12.5" transform="translate(885 2320)" fill="#1eec77"/>
+        </g>
+        <text id="_3" data-name="3" transform="translate(843 2350)" fill="#fff" font-size="15" font-family="Poppins-SemiBold, Poppins" font-weight="600" letter-spacing="0.1em"><tspan x="0" y="0">3</tspan></text>
+      </g>
+      <g id="Group_189" data-name="Group 189" transform="translate(11)">
+        <g id="Group_181" data-name="Group 181" transform="translate(-75 12)">
+          <circle id="Ellipse_113" data-name="Ellipse 113" cx="25" cy="25" r="25" transform="translate(1098 2308)" fill="rgba(30,236,119,0.6)"/>
+          <circle id="Ellipse_114" data-name="Ellipse 114" cx="12.5" cy="12.5" r="12.5" transform="translate(1110 2320)" fill="#1eec77"/>
+        </g>
+        <text id="_4" data-name="4" transform="translate(1042 2350)" fill="#fff" font-size="15" font-family="Poppins-SemiBold, Poppins" font-weight="600" letter-spacing="0.1em"><tspan x="0" y="0">4</tspan></text>
+      </g>
+      <g id="Group_187" data-name="Group 187" transform="translate(5)">
+        <g id="Group_182" data-name="Group 182" transform="translate(-99 12)">
+          <circle id="Ellipse_115" data-name="Ellipse 115" cx="25" cy="25" r="25" transform="translate(1323 2308)" fill="rgba(30,236,119,0.6)"/>
+          <circle id="Ellipse_116" data-name="Ellipse 116" cx="12.5" cy="12.5" r="12.5" transform="translate(1335 2320)" fill="#1eec77"/>
+        </g>
+        <text id="_5" data-name="5" transform="translate(1244 2350)" fill="#fff" font-size="15" font-family="Poppins-SemiBold, Poppins" font-weight="600" letter-spacing="0.1em"><tspan x="0" y="0">5</tspan></text>
+      </g>
+      <g id="Group_188" data-name="Group 188">
+        <g id="Group_183" data-name="Group 183" transform="translate(2 12)">
+          <circle id="Ellipse_117" data-name="Ellipse 117" cx="25" cy="25" r="25" transform="translate(1423 2308)" fill="rgba(30,236,119,0.6)"/>
+          <circle id="Ellipse_118" data-name="Ellipse 118" cx="12.5" cy="12.5" r="12.5" transform="translate(1435 2320)" fill="#1eec77"/>
+        </g>
+        <text id="_6" data-name="6" transform="translate(1445 2350)" fill="#fff" font-size="15" font-family="Poppins-SemiBold, Poppins" font-weight="600" letter-spacing="0.1em"><tspan x="0" y="0">6</tspan></text>
+      </g>
+      <text id="Inquire" transform="translate(472 2408)" fill="#00594c" font-size="25" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-44.713" y="0">Inquire</tspan></text>
+      <text id="Complete_An_Application" data-name="Complete
+An Application" transform="translate(668 2407)" fill="#00594c" font-size="25" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-62.9" y="0">Complete</tspan><tspan x="-93.6" y="38">An Application</tspan></text>
+      <text id="Schedule_Your_Visit" data-name="Schedule
+Your Visit" transform="translate(863 2407)" fill="#00594c" font-size="25" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-59.038" y="0">Schedule</tspan><tspan x="-59.712" y="38">Your Visit</tspan></text>
+      <text id="Visit_GGPS" data-name="Visit
+GGPS" transform="translate(1059 2408)" fill="#00594c" font-size="25" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-27.5" y="0">Visit</tspan><tspan x="-34.413" y="38">GGPS</tspan></text>
+      <text id="Testing" transform="translate(1254 2408)" fill="#00594c" font-size="25" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-46.8" y="0">Testing</tspan></text>
+      <text id="Fill_Admission_Form" data-name="Fill
+Admission Form" transform="translate(1450 2410)" fill="#00594c" font-size="25" font-family="Poppins-SemiBold, Poppins" font-weight="600"><tspan x="-17.05" y="0">Fill</tspan><tspan x="-103.062" y="38">Admission Form</tspan></text>
+    </g>
+  </g>
+</svg>
