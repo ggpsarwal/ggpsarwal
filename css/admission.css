@@ -1,0 +1,247 @@
+main {
+    position: relative;
+    width: 100%;
+    height: calc(30vh + 100vh + 60vh + 65vh);
+    min-height: calc(315px + 1050px + 630px + 683px);
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+main .heading {
+    width: 100%;
+    height: 30vh;
+    min-height: 315px;
+    padding: 0 350px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+main .heading h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--darkGreen);
+}
+
+main .heading hr {
+    width: 30%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray);
+    border: none;
+}
+
+main .heading h3 {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--darkGreen);
+}
+
+main .heading h3 span.bigger {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+main .heading h3 span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+main .info {
+    width: 100%;
+    height: 100vh;
+    min-height: 1050px;
+    flex-direction: column;
+}
+
+main .info img.image {
+    width: 30%;
+    border-radius: 20px;
+}
+
+main .info .info_text {
+    width: 100%;
+    height: 60%;
+    padding: 0 350px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+main .info .info_text h3 {
+    font-size: 19px;
+    font-weight: 300;
+    color: var(--darkGreen);
+}
+
+main .info .info_text h3 span.bigger {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+main .info .info_text h3 span {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+main .info .info_text img.sign {
+    width: 100px;
+}
+
+main .info .info_text .name {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+main .info .info_text h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--darkGreen);
+}
+
+main .info .info_text img.end {
+    align-self: center;
+}
+
+main .steps {
+    width: 100%;
+    height: 60vh;
+    min-height: 630px;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+main .steps h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--darkGreen);
+}
+
+main .steps hr {
+    width: 10%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray);
+    border: none;
+}
+
+main .steps .admission_steps {
+    width: 65%;
+    min-width: 1100px;
+    height: 35%;
+    min-height: 220px;
+    border-radius: 20px;
+}
+
+main .steps .admission_steps img {
+    height: 100%;
+    width: 100%;
+}
+
+main .steps .buttons {
+    width: 50%;
+    height: 20%;
+    justify-content: space-around;
+}
+
+main .steps .buttons button {
+    height: 50px;
+    width: 250px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+main .steps .buttons button:hover {
+    background-color: var(--green_hover);
+}
+
+main .know_more {
+    width: 100%;
+    height: 65vh;
+    min-height: 683px;
+    transform: rotate(180deg);
+    background: url(../assets/svg/home_page/Blob.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
+
+main .know_more .container {
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+    flex-direction: column;
+}
+
+main .know_more .container h1 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--darkGreen);
+}
+
+main .know_more .container hr {
+    width: 15%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--gray);
+    border: none;
+}
+
+main .know_more .container button {
+    height: 50px;
+    width: 350px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+main .know_more .container .inquire {
+    height: 30%;
+    width: 25%;
+    justify-content: flex-start;
+    flex-direction: column;
+    /* background-color: aqua; */
+}
+
+main .know_more .container .inquire h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--darkGreen);
+    letter-spacing: 1.5px;
+    padding-left: 25px;
+}
+
+main .know_more .container .inquire h3 img {
+    cursor: pointer;
+}
+
+main .know_more .container .inquire .inquire_options {
+    padding-left: 25px;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    display: none;
+}
+
+main .know_more .container .inquire .inquire_options a {
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    color: var(--darkGreen);
+}
+
+main .know_more .container .plant {
+    position: absolute;
+    left: 100px;
+    bottom: 100px;
+}
