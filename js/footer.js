@@ -58,9 +58,7 @@ reach_location.classList.add('reach_location');
 var reach_location_logo = document.createElement('div');
 reach_location_logo.classList.add('flexbox');
 reach_location_logo.classList.add('reach_location_logo');
-reach_location_logo.innerHTML = `<svg width="23" height="30" viewBox="0 0 12.467 17.37">
-    <path id="Location" d="M10.465,1.49A6.318,6.318,0,0,0,6.234,0,6.318,6.318,0,0,0,2,1.49,6.555,6.555,0,0,0,0,6.605c0,4.738,5.459,10.3,5.7,10.535a.746.746,0,0,0,.529.226.715.715,0,0,0,.529-.226c.245-.226,5.7-5.795,5.7-10.535a6.553,6.553,0,0,0-2-5.115ZM6.234,15.5a28.265,28.265,0,0,1-2.116-2.642c-1.7-2.416-2.6-4.568-2.6-6.248,0-4.719,3.608-5.094,4.723-5.094,4.383,0,4.723,3.907,4.723,5.094,0,3.319-3.384,7.415-4.725,8.888Zm0-12.231a3.049,3.049,0,1,0,3,3.039,3.049,3.049,0,0,0-3-3.039Zm0,4.776A1.737,1.737,0,1,1,7.912,6.306,1.709,1.709,0,0,1,6.234,8.04Z" transform="translate(0 0.003)" fill="#fff"/>
-</svg>`;
+reach_location_logo.innerHTML = `<img src="./assets/svg/footer/location.svg"></img>`;
 
 // Top footer --> Reach us --> Part 2 --> location --> text
 var reach_location_text = document.createElement('div');
@@ -96,9 +94,7 @@ reach_phone.classList.add('reach_phone');
 var reach_phone_logo = document.createElement('div');
 reach_phone_logo.classList.add('flexbox');
 reach_phone_logo.classList.add('reach_phone_logo');
-reach_phone_logo.innerHTML = `<svg width="22" height="21.999" viewBox="0 0 22 21.999">
-<path id="Phone" d="M19.847,11.7l-6.5-.5-1.4,2.694a3.775,3.775,0,0,1-.743-.262,5.4,5.4,0,0,1-.88-.473,6.806,6.806,0,0,1-1.5-1.425,5.321,5.321,0,0,1-.542-.852,4.7,4.7,0,0,1-.368-.833L10.206,8.2,8.929,1.266,1,0,.714.957a17.388,17.388,0,0,0,.416,11.1,15.991,15.991,0,0,0,4.86,6.76,14.224,14.224,0,0,0,7.372,3.1,13.862,13.862,0,0,0,7.8-1.432L22,20.06Zm-1.579,7.43a11.747,11.747,0,0,1-6.233.149A12.373,12.373,0,0,1,6.488,16.19a13.838,13.838,0,0,1-3.521-5.575A14.825,14.825,0,0,1,2.322,3.9c.057-.42.133-.84.227-1.252l4.537.724.7,3.817L5.4,9.1l.156.751a8.97,8.97,0,0,0,2.46,4.37A7.88,7.88,0,0,0,12.3,16.38l.1.013.709.074,1.458-2.8,3.581.278,1.234,4.786c-.365.145-.741.279-1.116.4Z" transform="translate(0)" fill="#fff"/>
-</svg>`;
+reach_phone_logo.innerHTML = `<img height="30%" src="./assets/svg/footer/phone.svg"></img>`;
 
 // Top footer --> Reach us --> Part 2 --> phone --> text
 var reach_phone_text = document.createElement('div');
@@ -135,9 +131,7 @@ reach_mail.classList.add('reach_mail');
 var reach_email_logo = document.createElement('div');
 reach_email_logo.classList.add('flexbox');
 reach_email_logo.classList.add('reach_email_logo');
-reach_email_logo.innerHTML = `<svg width="22" height="17.37" viewBox="0 0 22 17.37">
-<path id="Mail" d="M19,0H3A2.949,2.949,0,0,0,0,2.895V14.474a2.949,2.949,0,0,0,3,2.895H19a2.949,2.949,0,0,0,3-2.9V2.895A2.949,2.949,0,0,0,19,0Zm0,1.93a1.023,1.023,0,0,1,.329.054L11,8.414,2.671,1.984A1.024,1.024,0,0,1,3,1.93Zm0,13.509H3a1.019,1.019,0,0,1-.707-.283A.948.948,0,0,1,2,14.474V3.937L10.375,10.4a1.028,1.028,0,0,0,1.25,0L20,3.937V14.474a.948.948,0,0,1-.293.682A1.019,1.019,0,0,1,19,15.439Z" transform="translate(0 0)" fill="#fff"/>
-</svg>`;
+reach_email_logo.innerHTML = `<img src="./assets/svg/footer/mail.svg"></img>`;
 
 // Top footer --> Reach us --> Part 2 --> email --> text
 var reach_email_text = document.createElement('div');
