@@ -57,7 +57,7 @@ login.setAttribute("onclick", "loginBox()");
 var user_logo = document.createElement('div');
 user_logo.classList.add('flexbox');
 user_logo.classList.add('user_logo');
-user_logo.innerHTML = `<svg width="30" height="30" viewBox="0 0 31.5 31.5"><g id="User" transform="translate(-1705 -22.5)"><path id="Path_1" data-name="Path 1" d="M18,2.25A15.75,15.75,0,1,0,33.75,18,15.75,15.75,0,0,0,18,2.25Zm9,25.784V27.35a5.86,5.86,0,0,0-5.625-5.975h-6.75a5.85,5.85,0,0,0-5.614,5.974c0,.012-.011.025-.011.037v.658a13.506,13.506,0,1,1,18-.011Z" transform="translate(1702.75 20.25)" fill="#fff"/><path id="Path_2" data-name="Path 2" d="M18,7.875A5.625,5.625,0,1,0,23.625,13.5,5.625,5.625,0,0,0,18,7.875Z" transform="translate(1702.75 20.25)" fill="#fff"/></g></svg>`;
+user_logo.innerHTML = `<img height="80%" src="./assets/svg/header/user.svg">`;
 
 // Top header --> Login --> Part 2
 var login_text = document.createElement('h2');
