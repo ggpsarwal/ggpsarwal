@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/auth.css">
+    <link rel="stylesheet" href="./css/utils.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
@@ -20,36 +24,76 @@
     <script src="./js/firebase.js"></script>
   </head>
 
-  <body>
-    <div class="container">
-      <h2>Drop Your Queries Here!</h2>
-      <p>We would love to here from you.</p>
+  <body class="flexbox">
+    <header id="header"></header>
+    <section id="login_box" class="flexbox login_box">
+      <img src="./assets/svg/svg_header/close.svg" alt="Close Button" id="close" onclick="closeBox()">
+      <img src="./assets/svg/svg_header/lock.svg" alt="Lock" class="lock">
 
-      <section class="contact-us">
-        <div class="container ">
-          <h2 class="text-center my-5">Contact Us</h2>
-          <form class="contact-form">
-            <div class="flex-row">
-              <input type="text" id="fullname" placeholder="Your name" required>
-              <input type="email" id="emailaddress" placeholder="Your Email" required>
-              <input type="text" id="subject" placeholder="Subject" required>
-              <textarea name="" id="message" cols="30" rows="10" placeholder="Your message here" required></textarea>
-              <input type="submit" value="Send Message" id="submitbtn" class="btn btn-primary my-3">
-            </div>
-          </form>
+      <a href="./school_login.html" class="first_text flexbox">
+        <h3>School Login</h3>
+        <img src="./assets/svg/svg_header/arrow_right.svg" alt="Arrow">
+      </a>
+      <hr>
+      <a href="./student_login.html" class="second_text flexbox">
+        <h3>Parents / Students Login</h3>
+        <img src="./assets/svg/svg_header/arrow_right.svg" alt="Arrow">
+      </a>
+      <img src="./assets/svg/svg_header/dot.svg" alt="Dots" class="dot">
+    </section>
+    <main class="flexbox container">
+      <div class="container">
+        <h2 class="py-5">Drop Your Queries Here!</h2>
+        <p>We would love to here from you.</p>
+
+        <section class="contact-us">
+          <div class="container ">
+            <h2 class="text-center my-5">Contact Us</h2>
+            <form class="contact-form">
+              <div class="flex-row">
+                <input type="text" id="fullname" placeholder="Your name" required>
+                <input type="email" id="emailaddress" placeholder="Your Email" required>
+                <input type="text" id="subject" placeholder="Subject" required>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your message here" required></textarea>
+                <input type="submit" value="Send Message" id="submitbtn" class="btn btn-primary my-3">
+              </div>
+            </form>
+          </div>
+        </section>
+        <div class="text-center py-5">
+          <img src="./assets/End_Section_Dots.svg" alt="">
         </div>
-      </section>
-      <div class="text-center py-5">
-        <img src="./assets/End_Section_Dots.svg" alt="">
-      </div>
-      <div class="py-4">
-        <h6>NON-DISCRIMINATION STATEMENT:</h6>
-        <P>Gyan Ganga Public School is committed to providing a safe environment for its students and all members of the
-          community <br>The school relies on preventative practices to reduce risk and ensure student protection and
-          will respond effectively to situations that are harmful to our students and our school community.</P>
+        <div class="py-4">
+          <h6>NON-DISCRIMINATION STATEMENT:</h6>
+          <P>Gyan Ganga Public School is committed to providing a safe environment for its students and all members of
+            the
+            community <br>The school relies on preventative practices to reduce risk and ensure student protection and
+            will respond effectively to situations that are harmful to our students and our school community.</P>
 
+        </div>
       </div>
-    </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
+    <script>
+      // Login Box Functions
+      const main_director_page = document.getElementById('main_director_page');
+
+      function loginBox() {
+        login_box.style.display = "flex";
+        main_director_page.style.filter = "blur(50px)";
+        footer_top.style.filter = "blur(50px)";
+      }
+
+      function closeBox() {
+        login_box.style.display = "none";
+        main_director_page.style.filter = "blur(0px)";
+        footer_top.style.filter = "blur(0px)";
+      }
+    </script>
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
