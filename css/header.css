@@ -1,16 +1,16 @@
 header {
     position: sticky;
     width: 100%;
-    height: 25vh;
-    min-height: 262px;
+    height: 10vh;
+    min-height: 180px;
     top: 0;
     z-index: 999;
 }
 
 .header_top {
     width: 100%;
-    max-height: 66px;
-    height: 25%;
+    max-height: 56px;
+    height: 30%;
     background-color: var(--black);
     justify-content: space-between;
     padding: 0 90px;
@@ -45,8 +45,8 @@ header {
 }
 
 .login {
-    width: 7.5%;
-    height: 60%;
+    width: 10%;
+    height: 70%;
     background-color: var(--green);
     border-radius: 10px;
     justify-content: space-evenly;
@@ -132,8 +132,8 @@ header {
 
 .header_bottom {
     width: 100%;
-    max-height: 197px;
-    height: 75%;
+    max-height: 127px;
+    height: 100%;
     background-color: var(--darkGreen);
     justify-content: space-between;
 }
@@ -147,24 +147,24 @@ header {
 }
 
 .main_header {
-    width: 50%;
-    height: 100%;
+    width: 80%;
+    height: 60%;
     justify-content: space-evenly;
 }
 
 .logo_ggps_a{
     position: relative;
-    max-height: 185px;
+    max-height: 115px;
 }
 
 .logo_ggps {
     position: relative;
-    max-height: 185px;
+    max-height: 115px;
 }
 
 .ggps_text {
     position: relative;
-    height: 70%;
+    height: 80%;
     width: 75%;
     flex-direction: column;
     align-self: flex-end;
@@ -172,7 +172,7 @@ header {
 
 .ggps_name {
     width: 100%;
-    height: 50%;
+    height: 30%;
     align-items: flex-end;
 }
 
@@ -184,7 +184,7 @@ header {
 
 .ggps_address {
     width: 100%;
-    height: 50%;
+    height: 20%;
     align-items: flex-start;
 }
 
