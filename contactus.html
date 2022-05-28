@@ -42,7 +42,7 @@
       </a>
       <img src="./assets/svg/svg_header/dot.svg" alt="Dots" class="dot">
     </section>
-    <main class="flexbox container">
+    <main id="contact">
       <div class="container">
         <h2 class="py-5">Drop Your Queries Here!</h2>
         <p>We would love to here from you.</p>
@@ -81,17 +81,17 @@
     <script src="./js/footer.js"></script>
     <script>
       // Login Box Functions
-      const main_director_page = document.getElementById('main_director_page');
+      const contact = document.getElementById('contact');
 
       function loginBox() {
         login_box.style.display = "flex";
-        main_director_page.style.filter = "blur(50px)";
+        contact.style.filter = "blur(50px)";
         footer_top.style.filter = "blur(50px)";
       }
 
       function closeBox() {
         login_box.style.display = "none";
-        main_director_page.style.filter = "blur(0px)";
+        contact.style.filter = "blur(0px)";
         footer_top.style.filter = "blur(0px)";
       }
     </script>
