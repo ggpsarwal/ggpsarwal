@@ -6,12 +6,13 @@
 
 │   404.html
 │   about.html
+│   admission.html
 │   checkout.html
 │   contactus.html
 │   dashboard.html
 │   director.html
 │   elementary_school.html
-│   important.txt
+│   gallery.html
 │   index.html
 │   lower_school.html
 │   principal.html
@@ -22,6 +23,7 @@
 │   
 ├───assets
 │   │   End_Section_Dots.svg
+│   │   favicon.ico
 │   │   Logo Green.png
 │   │   Logo White.png
 │   │   logo_ggps.png
@@ -59,6 +61,25 @@
 │   │       Login_Girl.svg
 │   │       
 │   ├───svg
+│   │   ├───admission
+│   │   │       admission_steps.svg
+│   │   │       inquire_arrow_brown.svg
+│   │   │       inqure_arrow.svg
+│   │   │       plant_small.svg
+│   │   │       
+│   │   ├───footer
+│   │   │       facebook.svg
+│   │   │       instagram.svg
+│   │   │       location.svg
+│   │   │       mail.svg
+│   │   │       phone.svg
+│   │   │       twitter.svg
+│   │   │       
+│   │   ├───header
+│   │   │       dot_left.svg
+│   │   │       dot_right.svg
+│   │   │       user.svg
+│   │   │       
 │   │   ├───home_page
 │   │   │       background_speciality.svg
 │   │   │       Blob.svg
@@ -89,6 +110,7 @@
 ├───css
 │       404.css
 │       about.css
+│       admission.css
 │       auth.css
 │       director.css
 │       elementary_school.css
@@ -119,10 +141,14 @@
 │   │       4.0 0 Level DFD For Login (Student).svg
 │   │       5.0 1 Level DFD For Login (Student).svg
 │   │       
+│   ├───Extras
+│   │       E-R Diagram.png
+│   │       E-R Diagram.svg
+│   │       Iterative Waterfall Model.svg
+│   │       
 │   ├───Flowcharts
 │   │       Admission Flowchart For Admin.svg
 │   │       Admission Flowchart For Student.svg
-│   │       E-R Diagram.png
 │   │       Flowchart For Admin Login.svg
 │   │       Flowchart For Student Login.svg
 │   │       
@@ -375,5 +401,6 @@
         └───8 Principal's Desk
                 Principal's Image.jpg
                 Principal's Sign.png
-                      
+                
+   
 ```
