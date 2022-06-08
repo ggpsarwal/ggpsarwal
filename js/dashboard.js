@@ -191,7 +191,7 @@ function viewAlumniDetails() {
             const urn = element.parentNode.parentNode.children[1].innerHTML;
             // console.log(urn);
             // alert("clicked");
-            var docRef = db.collection("admissionForm").doc(`1651998477400`);
+            var docRef = db.collection("admissionForm").doc(`${urn}`);
             docRef.get().then((doc) => {
                 if (doc.exists) {
                     // console.log("Document data:", doc.data());
