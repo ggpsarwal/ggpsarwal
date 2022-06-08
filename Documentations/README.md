@@ -3,8 +3,7 @@
 <br>
 
 ```
-
-│   404.html
+404.html
 │   about.html
 │   admission.html
 │   checkout.html
@@ -15,10 +14,12 @@
 │   gallery.html
 │   index.html
 │   lower_school.html
+│   pdf.pdf
 │   principal.html
 │   README.md
 │   school_login.html
 │   student_login.html
+│   tree.md
 │   upper_school.html
 │   
 ├───assets
@@ -402,5 +403,6 @@
                 Principal's Image.jpg
                 Principal's Sign.png
                 
+        
    
 ```
