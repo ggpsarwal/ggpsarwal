@@ -23,5 +23,5 @@ You can see this project live [here](https://ggpsarwal.github.io/ggpsarwal) (Sup
 <br>Designed and Developed with 💖 By
 <br>[@SinhaAnishKumar](https://www.github.com/SinhaAnishKumar)
 <br>[@Sweta-Sr](https://www.github.com/Sweta-Sr)
-<br>[@flyingsonu122](https://www.github.com/flyingsonu122)
+<br>[@iamsonukushwaha](https://www.github.com/iamsonukushwaha)
 <br>
